@@ -1,7 +1,13 @@
 package projetoCRUDbasicoM.app;
 
+import projetoCRUDbasicoM.model.Aluno;
+
 public class App {
     public static void main(String[] args) {
-        System.out.println("Olá mundo");
+        Aluno alu;
+        alu = new Aluno();
+
+        alu.assistirAula(); // Teste 1
+        System.out.println(alu.efetuarPergunta()); // Teste 2
     }
 }

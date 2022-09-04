@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c554a22d-0312-4fd1-ab7c-fc3f1f9ffc91" name="Changes" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/src/projetoCRUDbasico_Michel/app/App.java" afterDir="false" />
+    <list default="true" id="c554a22d-0312-4fd1-ab7c-fc3f1f9ffc91" name="Changes" comment="feat: creation of model and app packages">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/projetoCRUDbasicoM/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/app/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/projetoCRUDbasicoM/model/Aluno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/model/Aluno.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +51,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.projetoCRUDbasicoM.app.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="projetoCRUDbasico_Michel.app.App" />
       <module name="projetoCRUDbasicoM" />
@@ -64,8 +65,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="projetoCRUDbasicoM.app.App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="projetoCRUDbasicoM.app.App" />
+      <module name="projetoCRUDbasicoM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="projetoCRUDbasicoM.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.projetoCRUDbasicoM.app.App" />
         <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
@@ -79,6 +94,8 @@
       <option name="presentableId" value="Default" />
       <updated>1662316976035</updated>
       <workItem from="1662316976037" duration="2962000" />
+      <workItem from="1662320306054" duration="875000" />
+      <workItem from="1662326659285" duration="610000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1662318474266</created>
@@ -101,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662319170783</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat: creation of model and app packages">
+      <created>1662320562919</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1662320562919</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,6 +144,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="feat: creation of model and app packages" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: creation of model and app packages" />
   </component>
 </project>
