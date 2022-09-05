@@ -3,7 +3,7 @@ package projetoCRUDbasicoM.app;
 import projetoCRUDbasicoM.model.Aluno;
 
 import javax.swing.*;
-import java.util.Scanner;
+// import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) {
