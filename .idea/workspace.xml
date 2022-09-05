@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c554a22d-0312-4fd1-ab7c-fc3f1f9ffc91" name="Changes" comment="feat: adding methods in Aluno class">
-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/model/Professor.java" afterDir="false" />
+    <list default="true" id="c554a22d-0312-4fd1-ab7c-fc3f1f9ffc91" name="Changes" comment="feat: adding input and output information">
+      <change afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/app/ControleFluxo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/projetoCRUDbasicoM/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/app/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/projetoCRUDbasicoM/model/Aluno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/model/Aluno.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,13 +78,26 @@
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.projetoCRUDbasicoM.app.App">
+  <component name="RunManager" selected="Application.ControleFluxo">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="projetoCRUDbasico_Michel.app.App" />
       <module name="projetoCRUDbasicoM" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="projetoCRUDbasico_Michel.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ControleFluxo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="projetoCRUDbasicoM.app.ControleFluxo" />
+      <module name="projetoCRUDbasicoM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="projetoCRUDbasicoM.app.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,6 +120,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ControleFluxo" />
         <item itemvalue="Application.projetoCRUDbasicoM.app.App" />
         <item itemvalue="Application.App" />
       </list>
@@ -126,7 +138,7 @@
       <workItem from="1662320306054" duration="875000" />
       <workItem from="1662326659285" duration="1077000" />
       <workItem from="1662330992962" duration="3081000" />
-      <workItem from="1662339588161" duration="1185000" />
+      <workItem from="1662339588161" duration="2896000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1662318474266</created>
@@ -177,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662331221673</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="feat: adding input and output information">
+      <created>1662341088081</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1662341088081</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,17 +218,7 @@
     <MESSAGE value="feat: creation Aluno.java" />
     <MESSAGE value="first commit" />
     <MESSAGE value="feat: adding methods in Aluno class" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: adding methods in Aluno class" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/projetoCRUDbasicoM/model/Aluno.java</url>
-          <line>10</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="feat: adding input and output information" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: adding input and output information" />
   </component>
 </project>
