@@ -1,7 +1,7 @@
 package projetoCRUDbasicoM.model;
 
 public class Aluno {
-    private String nome;
+    protected String nome;
     private String email;
     private int matricula;
     private String sexo;
