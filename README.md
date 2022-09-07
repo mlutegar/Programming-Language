@@ -3,8 +3,8 @@ Esse repositório foi feito para o acompanhamento e realizações de atividades 
 
 # Branchs feitas
 Esse repositrório possue duas frentes de branchs:
-- A primeira para o acompanhamento das aulas (aulas/...)[https://github.com/mlutegar/Programming-Language/tree/aulas/4](url) 
-- A segunda para a realização de trabalhos (trabalhos/aulas...)[https://github.com/mlutegar/Programming-Language/tree/trabalhos/aula3-5](url)
+- A primeira para o acompanhamento das aulas: [https://github.com/mlutegar/Programming-Language/tree/aulas/4](url) 
+- A segunda para a realização de trabalhos: [https://github.com/mlutegar/Programming-Language/tree/trabalhos/aula3-5](url)
 
 # Tecnologias Utilizadas
 - Docker
