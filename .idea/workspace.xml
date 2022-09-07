@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c554a22d-0312-4fd1-ab7c-fc3f1f9ffc91" name="Changes" comment="feat: creating AlunoDAO">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/static/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/static/script.sql" afterDir="false" />
+    <list default="true" id="c554a22d-0312-4fd1-ab7c-fc3f1f9ffc91" name="Changes" comment="feat: docker configuration">
+      <change afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/service/AlunoService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/projetoCRUDbasicoM/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/app/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/projetoCRUDbasicoM/persist/AlunoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/persist/AlunoDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/projetoCRUDbasicoM/persist/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/persist/DAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/projetoCRUDbasicoM/static/script.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/static/script.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/projetoCRUDbasicoM/static/text.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/static/text.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,6 +89,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -108,13 +109,13 @@
       <recent name="D:\OneDrive\Documentos\IdeaProjects\projetoCRUDbasico_Michel\src\projetoCRUDbasicoM\static" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DAO">
-    <configuration name="DAO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="projetoCRUDbasicoM.persist.DAO" />
+  <component name="RunManager" selected="Application.App">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="projetoCRUDbasicoM.app.App" />
       <module name="projetoCRUDbasicoM" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="projetoCRUDbasicoM.persist.*" />
+          <option name="PATTERN" value="projetoCRUDbasicoM.app.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -122,12 +123,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EstruturaDeDecisao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="projetoCRUDbasicoM.structures.EstruturaDeDecisao" />
+    <configuration name="DAO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="projetoCRUDbasicoM.persist.DAO" />
       <module name="projetoCRUDbasicoM" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="projetoCRUDbasicoM.structures.*" />
+          <option name="PATTERN" value="projetoCRUDbasicoM.persist.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -192,11 +193,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.App" />
         <item itemvalue="Application.DAO" />
         <item itemvalue="Docker.MySQL Config" />
         <item itemvalue="Docker.static.db: Compose Deployment" />
         <item itemvalue="Application.EstruturaDeRepeticao" />
-        <item itemvalue="Application.EstruturaDeDecisao" />
       </list>
     </recent_temporary>
   </component>
@@ -220,7 +221,7 @@
       <workItem from="1662429476053" duration="1127000" />
       <workItem from="1662558670474" duration="10201000" />
       <workItem from="1662571158791" duration="138000" />
-      <workItem from="1662571366133" duration="5714000" />
+      <workItem from="1662571366133" duration="8583000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1662318474266</created>
@@ -369,7 +370,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662572662109</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="feat: docker configuration">
+      <created>1662578651026</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1662578651026</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -405,7 +413,8 @@
     <MESSAGE value="fix: correcting the position of Bolo and TipoBolo classes" />
     <MESSAGE value="feat: adding libs folder" />
     <MESSAGE value="feat: creating AlunoDAO" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: creating AlunoDAO" />
+    <MESSAGE value="feat: docker configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: docker configuration" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

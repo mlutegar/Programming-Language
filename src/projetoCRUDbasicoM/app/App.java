@@ -1,12 +1,14 @@
 package projetoCRUDbasicoM.app;
 
 import projetoCRUDbasicoM.model.Aluno;
+import projetoCRUDbasicoM.service.AlunoService;
 
 import javax.swing.*;
 // import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) {
+        var service = new AlunoService();
         Aluno alu;
         alu = new Aluno();
 
@@ -45,8 +47,23 @@ public class App {
         System.out.println("Aluno.sexo: " + alu.getSexo());
 
         // Saida com janela
-        var msg = "Aluno.nome: " + alu.getNome() + "\nAluno.email: " + alu.getEmail() + "\nAluno.matricula: " + alu.getMatricula() + "\nAluno.sexo: " + alu.getSexo();
-        JOptionPane.showMessageDialog(null, msg, "Resposta", JOptionPane.PLAIN_MESSAGE);
+        var situacao = "Ocorreu uma falha na gravação. Verifique o log";
+        var iconeStatus = JOptionPane.ERROR_MESSAGE;
+
+        var response = service.save(alu);
+        if(response) {
+            situacao = "Gravado com sucesso";
+            iconeStatus = JOptionPane.INFORMATION_MESSAGE;
+        }
+
+        var msg = "Situação da gravação no banco: " + situacao + "\n\n" + "Aluno.nome: " + alu.getNome() + "\nAluno.email: " + alu.getEmail() + "\nAluno.matricula: " + alu.getMatricula() + "\nAluno.sexo: " + alu.getSexo();
+        JOptionPane.showMessageDialog(null, msg, "Resposta", iconeStatus);
+
+        service.findAll().forEach(aluno -> System.out.println(aluno.getNome()));
+        var respostaList = service.findAll().stream().map(aluno ->
+        {return "Aluno.nome: " + aluno.getNome() + "\nAluno.email: " + aluno.getEmail() + "\nAluno.matricula: " + aluno.getMatricula() + "\nAluno.sexo: " + aluno.getSexo();}
+        ).toList();
+        JOptionPane.showMessageDialog(null, respostaList, "Resposta", JOptionPane.INFORMATION_MESSAGE);
 
     }
 }

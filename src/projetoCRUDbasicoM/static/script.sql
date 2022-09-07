@@ -7,3 +7,5 @@ create table if not exists aluno(
   matricula int not null unique,
   sexo varchar(1) not null
 );
+
+select * from aluno;

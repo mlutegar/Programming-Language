@@ -12,13 +12,13 @@ import java.util.List;
 public class AlunoDAO extends DAO{
     private Connection conn;
 
-    public void save(Aluno aluno) {
+    public boolean save(Aluno aluno) {
         PreparedStatement pstmt = null;
 
         try {
             conn = getConnection();
             pstmt = conn.prepareStatement(
-                    "insert into aluno values (nome, email, matricula, sexo) values (?, ?, ?, ?, ?)"
+                    "insert into aluno (nome, email, matricula, sexo) values (?, ?, ?, ?)"
             );
 
             pstmt.setString(1, aluno.getNome());
@@ -26,9 +26,16 @@ public class AlunoDAO extends DAO{
             pstmt.setInt(3, aluno.getMatricula());
             pstmt.setString(4, aluno.getSexo());
 
+            var response = pstmt.executeUpdate();
+            if(response != 0)
+                return Boolean.TRUE;
+
+            return Boolean.FALSE;
+
         } catch (SQLException e) {
             e.printStackTrace();
             System.err.println("Error on save aluno. Error:  " + e.getMessage());
+            return Boolean.FALSE;
         } finally {
             try {
                 if (conn != null)
@@ -43,6 +50,8 @@ public class AlunoDAO extends DAO{
     }
 
     public List<Aluno> findAll() {
+
+
 
         PreparedStatement pstmt = null;
         ResultSet rs = null;
@@ -81,4 +90,13 @@ public class AlunoDAO extends DAO{
         }
         return null;
     }
+
+    // public  Aluno findById(long id){}
+
+    // public  Aluno update(Aluno aluno) {}
+
+    // public boolean deleteById(long id) {}
+
+    // public boolean deleteAll() {}
+
 }
