@@ -8,6 +8,7 @@ import java.util.Scanner;
 public class EstruturaDeRepeticao {
 
     public void estruturaFor(List<String> nomes){
+        Collections.sort(nomes);
         for(int i = 0; i < nomes.size(); i++){
             System.out.print(nomes.get(i));
 
