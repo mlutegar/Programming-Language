@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c554a22d-0312-4fd1-ab7c-fc3f1f9ffc91" name="Changes" comment="fix: correcting the position of Bolo and TipoBolo classes">
-      <change afterPath="$PROJECT_DIR$/libs/mysql-connector-java-8.0.30.jar" afterDir="false" />
+    <list default="true" id="c554a22d-0312-4fd1-ab7c-fc3f1f9ffc91" name="Changes" comment="feat: adding libs folder">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/libs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/persist/AlunoDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/projetoCRUDbasicoM/persist/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/persist/DAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/projetoCRUDbasicoM/static/text.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/static/text.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -75,6 +77,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -86,9 +89,9 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -96,7 +99,7 @@
       <recent name="D:\OneDrive\Documentos\IdeaProjects\projetoCRUDbasico_Michel\libs" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.EstruturaDeRepeticao">
+  <component name="RunManager" selected="Application.DAO">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="projetoCRUDbasico_Michel.app.App" />
       <module name="projetoCRUDbasicoM" />
@@ -110,12 +113,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ControleFluxo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="projetoCRUDbasicoM.app.ControleFluxo" />
+    <configuration name="DAO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="projetoCRUDbasicoM.persist.DAO" />
       <module name="projetoCRUDbasicoM" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="projetoCRUDbasicoM.app.*" />
+          <option name="PATTERN" value="projetoCRUDbasicoM.persist.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -164,11 +167,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DAO" />
         <item itemvalue="Application.EstruturaDeRepeticao" />
         <item itemvalue="Application.EstruturaDeDecisao" />
         <item itemvalue="Application.projetoCRUDbasicoM.app.App" />
         <item itemvalue="Application.App" />
-        <item itemvalue="Application.ControleFluxo" />
       </list>
     </recent_temporary>
   </component>
@@ -190,7 +193,9 @@
       <workItem from="1662426321369" duration="138000" />
       <workItem from="1662428105869" duration="12000" />
       <workItem from="1662429476053" duration="1127000" />
-      <workItem from="1662558670474" duration="9255000" />
+      <workItem from="1662558670474" duration="10201000" />
+      <workItem from="1662571158791" duration="138000" />
+      <workItem from="1662571366133" duration="1258000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1662318474266</created>
@@ -325,7 +330,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662568273071</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="feat: adding libs folder">
+      <created>1662570013713</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1662570013713</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -359,7 +371,8 @@
     <MESSAGE value="feat: adding Bolo class for understanding of necessary and not necessary attributes" />
     <MESSAGE value="feat: adding enum class" />
     <MESSAGE value="fix: correcting the position of Bolo and TipoBolo classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: correcting the position of Bolo and TipoBolo classes" />
+    <MESSAGE value="feat: adding libs folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: adding libs folder" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
