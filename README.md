@@ -4,3 +4,4 @@ Esse repositório foi feito para o acompanhamento e realizações de atividades 
 # Tecnologias Utilizadas
 - Docker
 - Java 11
+- MySQL
