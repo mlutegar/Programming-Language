@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c554a22d-0312-4fd1-ab7c-fc3f1f9ffc91" name="Changes" comment="feat: creating AlunoTecnico.java">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/model/AlunoTecnico.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/structures/EstruturaDeDecisao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/structures/EstruturaDeRepeticao.java" afterDir="false" />
+    <list default="true" id="c554a22d-0312-4fd1-ab7c-fc3f1f9ffc91" name="Changes" comment="feat: studying repetition and decision structures">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/projetoCRUDbasicoM/model/Aluno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/model/Aluno.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/projetoCRUDbasicoM/static/text.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/static/text.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/projetoCRUDbasicoM/users/AlunoTecnico.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/projetoCRUDbasicoM/structures/EstruturaDeRepeticao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/structures/EstruturaDeRepeticao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,20 +68,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "full.screen.before.presentation.mode": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.EstruturaDeRepeticao">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="projetoCRUDbasico_Michel.app.App" />
@@ -177,7 +172,11 @@
       <workItem from="1662330992962" duration="3081000" />
       <workItem from="1662339588161" duration="3464000" />
       <workItem from="1662343994512" duration="857000" />
-      <workItem from="1662376930114" duration="4572000" />
+      <workItem from="1662376930114" duration="4647000" />
+      <workItem from="1662426321369" duration="138000" />
+      <workItem from="1662428105869" duration="12000" />
+      <workItem from="1662429476053" duration="1127000" />
+      <workItem from="1662558670474" duration="1510000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1662318474266</created>
@@ -256,7 +255,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662344834538</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="feat: studying repetition and decision structures">
+      <created>1662381620026</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1662381620026</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,7 +288,8 @@
     <MESSAGE value="feat: adding flow control" />
     <MESSAGE value="feat: creating users package" />
     <MESSAGE value="feat: creating AlunoTecnico.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: creating AlunoTecnico.java" />
+    <MESSAGE value="feat: studying repetition and decision structures" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: studying repetition and decision structures" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
