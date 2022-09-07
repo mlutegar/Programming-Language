@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c554a22d-0312-4fd1-ab7c-fc3f1f9ffc91" name="Changes" comment="feat: studying repetition and decision structures">
+    <list default="true" id="c554a22d-0312-4fd1-ab7c-fc3f1f9ffc91" name="Changes" comment="feat: adding new repeating structures">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/projetoCRUDbasicoM/static/text.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/static/text.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/projetoCRUDbasicoM/structures/EstruturaDeRepeticao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/structures/EstruturaDeRepeticao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -176,7 +175,7 @@
       <workItem from="1662426321369" duration="138000" />
       <workItem from="1662428105869" duration="12000" />
       <workItem from="1662429476053" duration="1127000" />
-      <workItem from="1662558670474" duration="1510000" />
+      <workItem from="1662558670474" duration="2613000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1662318474266</created>
@@ -262,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662381620026</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="feat: adding new repeating structures">
+      <created>1662560234477</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1662560234477</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,7 +295,8 @@
     <MESSAGE value="feat: creating users package" />
     <MESSAGE value="feat: creating AlunoTecnico.java" />
     <MESSAGE value="feat: studying repetition and decision structures" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: studying repetition and decision structures" />
+    <MESSAGE value="feat: adding new repeating structures" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: adding new repeating structures" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
