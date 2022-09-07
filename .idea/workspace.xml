@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c554a22d-0312-4fd1-ab7c-fc3f1f9ffc91" name="Changes" comment="feat: docker configuration">
-      <change afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/service/AlunoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/projetoCRUDbasicoM/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/app/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/projetoCRUDbasicoM/persist/AlunoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/persist/AlunoDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/projetoCRUDbasicoM/static/script.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/static/script.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/projetoCRUDbasicoM/static/text.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/static/text.txt" afterDir="false" />
-    </list>
+    <list default="true" id="c554a22d-0312-4fd1-ab7c-fc3f1f9ffc91" name="Changes" comment="feat: class 5 updates" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -221,7 +214,7 @@
       <workItem from="1662429476053" duration="1127000" />
       <workItem from="1662558670474" duration="10201000" />
       <workItem from="1662571158791" duration="138000" />
-      <workItem from="1662571366133" duration="8583000" />
+      <workItem from="1662571366133" duration="8698000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1662318474266</created>
@@ -377,7 +370,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662578651026</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="feat: class 5 updates">
+      <created>1662581505075</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1662581505076</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -414,7 +414,8 @@
     <MESSAGE value="feat: adding libs folder" />
     <MESSAGE value="feat: creating AlunoDAO" />
     <MESSAGE value="feat: docker configuration" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: docker configuration" />
+    <MESSAGE value="feat: class 5 updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: class 5 updates" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
