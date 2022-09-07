@@ -26,4 +26,16 @@ public class DAO {
         return DriverManager.getConnection("jdbc:mysql:localhost/db01", "root", "");
     }
 
+    public static void main(String[] args) {
+        var dao = new DAO();
+
+        try {
+            dao.getConnection();
+            System.out.println("Conexão aberta");
+        } catch (SQLException e) {
+            e.printStackTrace();
+            throw new RuntimeException(e);
+        }
+    }
+
 }

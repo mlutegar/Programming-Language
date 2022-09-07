@@ -4,11 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c8d57f3-834d-4ddd-a9c2-991ed979c971" name="Changes" comment="feat: adding attributes and methods in Product.java">
-      <change afterPath="$PROJECT_DIR$/src/supermarketProject/persist/DAO.java" afterDir="false" />
+    <list default="true" id="2c8d57f3-834d-4ddd-a9c2-991ed979c971" name="Changes" comment="feat: creating DAO class">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/libs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/mysql-connector-java-8.0.30.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/supermarketProject/static/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/supermarketProject/static/script.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/supermarketProject/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/supermarketProject/app/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/supermarketProject/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/supermarketProject/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/supermarketProject/persist/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/supermarketProject/persist/DAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/supermarketProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/supermarketProject.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,19 +44,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/OneDrive/Documentos/IdeaProjects/supermarketProject/libs",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\OneDrive\Documentos\IdeaProjects\supermarketProject\libs" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Docker.static.db: Compose Deployment">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="supermarketProject.app.App" />
       <module name="supermarketProject" />
@@ -63,9 +85,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DAO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="supermarketProject.persist.DAO" />
+      <module name="supermarketProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="supermarketProject.persist.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="static.db: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="db" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="src/supermarketProject/static/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.static.db: Compose Deployment" />
         <item itemvalue="Application.App" />
+        <item itemvalue="Application.DAO" />
       </list>
     </recent_temporary>
   </component>
@@ -83,7 +133,10 @@
       <workItem from="1662328685059" duration="1081000" />
       <workItem from="1662330067460" duration="885000" />
       <workItem from="1662343102363" duration="883000" />
-      <workItem from="1662563160051" duration="868000" />
+      <workItem from="1662563160051" duration="2773000" />
+      <workItem from="1662571158301" duration="133000" />
+      <workItem from="1662581535977" duration="290000" />
+      <workItem from="1662581934733" duration="683000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1662330862141</created>
@@ -99,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662343948853</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat: creating DAO class">
+      <created>1662569262463</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1662569262463</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,6 +179,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="feat: adding attributes and methods in Product.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: adding attributes and methods in Product.java" />
+    <MESSAGE value="feat: creating DAO class" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: creating DAO class" />
   </component>
 </project>
