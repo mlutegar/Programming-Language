@@ -4,12 +4,6 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-/**
-* @Author: Michel Lutegar D'Orsi Pereira
-* @Since: 07/09/2002
-* @Version: 1.0
-* @Description: Classe responsavel por abrir a conexão com o banco de dados
-* */
 
 public class DAO { //DAO: Data Access Object
 
@@ -23,19 +17,7 @@ public class DAO { //DAO: Data Access Object
     }
 
     protected Connection getConnection() throws SQLException { // JDBC é uma API de nível de chamada, o que significa que as instruções SQL são transmitidas como sequências para a API que, então, se encarrega de executá-las no RDMS.
-        return DriverManager.getConnection("jdbc:mysql:localhost/db01", "root", ""); // jdbc = Java Database Connectivity
-    }
-
-    public static void main(String[] args) {
-        var dao = new DAO();
-
-        try {
-            dao.getConnection();
-            System.out.println("Conexão aberta");
-        } catch (SQLException e) {
-            e.printStackTrace();
-            throw new RuntimeException(e);
-        }
+        return DriverManager.getConnection("jdbc:mysql://localhost/db01", "root", ""); // jdbc = Java Database Connectivity
     }
 
 }

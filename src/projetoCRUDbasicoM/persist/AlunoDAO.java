@@ -4,7 +4,9 @@ import projetoCRUDbasicoM.model.Aluno;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class AlunoDAO extends DAO{
@@ -41,18 +43,42 @@ public class AlunoDAO extends DAO{
     }
 
     public List<Aluno> findAll() {
+
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+
         try {
             conn = getConnection();
+            pstmt = conn.prepareStatement(
+                    "select * from aluno"
+            );
+            rs = pstmt.executeQuery();
+
+            var alunos = new ArrayList<Aluno>();
+            while(rs.next()) {
+                var aluno = new Aluno();
+                aluno.setNome(rs.getString("nome"));
+                aluno.setEmail(rs.getString("email"));
+                aluno.setMatricula(rs.getInt("matricula"));
+                aluno.setSexo(rs.getString("sexo"));
+                alunos.add(aluno);
+            }
+            return alunos;
+
         } catch (SQLException e) {
             e.printStackTrace();
             System.err.println("Error on list aluno. Error:  " + e.getMessage());
         } finally {
             try {
-
+                if(pstmt != null)
+                    pstmt.close();
+                if(rs != null)
+                    rs.close();
             } catch (SQLException e) {
                 e.printStackTrace();
                 System.err.println("Error on close statements. Error:  " + e.getMessage());
             }
         }
+        return null;
     }
 }

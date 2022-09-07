@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  db:
+    container_name: mysql8
+    image: mysql:8.0
+    command: mysqld --default-authentication-plugin=mysql_native_password --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    environment:
+      #      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: db01
+      #      MYSQL_USER: senac_user
+      #      MYSQL_PASSWORD: senac_pass
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+    ports:
+      - '3306:3306'
+    volumes:
+      - 'c:/docker/mysql/db/data:/var/lib/mysql'
+      - 'c:/docker/mysql/db/my.cnf:/etc/mysql/conf.d/my.cnf'
+      - 'c:/docker/mysql/db/sql:/docker-entrypoint-initdb.d'
