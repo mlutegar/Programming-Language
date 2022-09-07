@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c554a22d-0312-4fd1-ab7c-fc3f1f9ffc91" name="Changes" comment="feat: adding Collection.sort">
-      <change afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/persist/DAO.java" afterDir="false" />
+    <list default="true" id="c554a22d-0312-4fd1-ab7c-fc3f1f9ffc91" name="Changes" comment="feat: creating DAO class">
+      <change afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/persist/bolo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/projetoCRUDbasicoM/static/text.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/static/text.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +179,7 @@
       <workItem from="1662426321369" duration="138000" />
       <workItem from="1662428105869" duration="12000" />
       <workItem from="1662429476053" duration="1127000" />
-      <workItem from="1662558670474" duration="4638000" />
+      <workItem from="1662558670474" duration="5661000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1662318474266</created>
@@ -287,7 +286,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662562939077</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="feat: creating DAO class">
+      <created>1662564723551</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1662564723551</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -317,7 +323,8 @@
     <MESSAGE value="feat: adding new repeating structures" />
     <MESSAGE value="feat: adding for each structure" />
     <MESSAGE value="feat: adding Collection.sort" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: adding Collection.sort" />
+    <MESSAGE value="feat: creating DAO class" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: creating DAO class" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
