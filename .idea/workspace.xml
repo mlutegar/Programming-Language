@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c8d57f3-834d-4ddd-a9c2-991ed979c971" name="Changes" comment="feat: creating docker compose and script.sql">
+    <list default="true" id="2c8d57f3-834d-4ddd-a9c2-991ed979c971" name="Changes" comment="feat: confirming sql connection">
+      <change afterPath="$PROJECT_DIR$/src/supermarketProject/persist/ProductDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/supermarketProject/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/supermarketProject/app/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/supermarketProject/persist/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/supermarketProject/persist/DAO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +63,7 @@
       <recent name="D:\OneDrive\Documentos\IdeaProjects\supermarketProject\libs" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DAO">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="supermarketProject.app.App" />
       <module name="supermarketProject" />
@@ -103,9 +105,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.App" />
         <item itemvalue="Application.DAO" />
         <item itemvalue="Docker.static.db: Compose Deployment" />
-        <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
   </component>
@@ -126,7 +128,7 @@
       <workItem from="1662563160051" duration="2773000" />
       <workItem from="1662571158301" duration="133000" />
       <workItem from="1662581535977" duration="290000" />
-      <workItem from="1662581934733" duration="913000" />
+      <workItem from="1662581934733" duration="3293000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1662330862141</created>
@@ -156,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662582758473</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="feat: confirming sql connection">
+      <created>1662582892972</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1662582892972</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,6 +187,7 @@
     <MESSAGE value="feat: adding attributes and methods in Product.java" />
     <MESSAGE value="feat: creating DAO class" />
     <MESSAGE value="feat: creating docker compose and script.sql" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: creating docker compose and script.sql" />
+    <MESSAGE value="feat: confirming sql connection" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: confirming sql connection" />
   </component>
 </project>

@@ -11,3 +11,5 @@ create table if not exists product(
     provider varchar(150) not null,
     register TIMESTAMP not null default CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+select * from product;
