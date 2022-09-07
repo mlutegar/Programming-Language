@@ -12,7 +12,12 @@ import java.sql.SQLException;
 public class DAO { //DAO: Data Access Object
 
     public DAO(){ //Define a estrutura da classe
-
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver"); // tenta executar o código
+        } catch (ClassNotFoundException cnfe) { // condição é o tipo de erro
+            cnfe.printStackTrace(); // se der falha executa um novo código
+            System.err.println("Class not found. Error: " + cnfe.getMessage());
+        }
     }
 
     protected Connection getConnection() throws SQLException {}

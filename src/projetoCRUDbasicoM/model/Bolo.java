@@ -1,4 +1,6 @@
-package projetoCRUDbasicoM.persist;
+package projetoCRUDbasicoM.model;
+
+import projetoCRUDbasicoM.model.enums.TipoBolo;
 
 public class Bolo {
     private int qtdFarinha;

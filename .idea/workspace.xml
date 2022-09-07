@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c554a22d-0312-4fd1-ab7c-fc3f1f9ffc91" name="Changes" comment="feat: adding Bolo class for understanding of necessary and not necessary attributes">
-      <change afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/persist/TipoBolo.java" afterDir="false" />
+    <list default="true" id="c554a22d-0312-4fd1-ab7c-fc3f1f9ffc91" name="Changes" comment="feat: adding enum class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/projetoCRUDbasicoM/persist/Bolo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/persist/Bolo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/projetoCRUDbasicoM/persist/Bolo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/model/Bolo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/projetoCRUDbasicoM/persist/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/persist/DAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/projetoCRUDbasicoM/persist/TipoBolo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/model/enums/TipoBolo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/projetoCRUDbasicoM/static/text.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/static/text.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -182,7 +183,7 @@
       <workItem from="1662426321369" duration="138000" />
       <workItem from="1662428105869" duration="12000" />
       <workItem from="1662429476053" duration="1127000" />
-      <workItem from="1662558670474" duration="6968000" />
+      <workItem from="1662558670474" duration="7720000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1662318474266</created>
@@ -303,7 +304,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662565678978</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="feat: adding enum class">
+      <created>1662567500619</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1662567500619</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -335,7 +343,8 @@
     <MESSAGE value="feat: adding Collection.sort" />
     <MESSAGE value="feat: creating DAO class" />
     <MESSAGE value="feat: adding Bolo class for understanding of necessary and not necessary attributes" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: adding Bolo class for understanding of necessary and not necessary attributes" />
+    <MESSAGE value="feat: adding enum class" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: adding enum class" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
