@@ -1,5 +1,7 @@
 package projetoCRUDbasicoM.persist;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
 import java.sql.SQLException;
 
 /**
@@ -20,6 +22,8 @@ public class DAO { //DAO: Data Access Object
         }
     }
 
-    protected Connection getConnection() throws SQLException {}
+    protected Connection getConnection() throws SQLException { // JDBC é uma API de nível de chamada, o que significa que as instruções SQL são transmitidas como sequências para a API que, então, se encarrega de executá-las no RDMS.
+        return DriverManager.getConnection("jdbc:mysql:localhost/db01", "root", ""); // jdbc = Java Database Connectivity
+    }
 
 }
