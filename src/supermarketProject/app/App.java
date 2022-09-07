@@ -1,8 +1,14 @@
 package supermarketProject.app;
 
 import supermarketProject.model.Product;
-
 import javax.swing.*;
+
+/**
+ * @Author: Michel Lutegar D'Orsi Pereira
+ * @Since: 07/09/2002
+ * @Version: 1.0
+ * @Description: Class responsible for adding new products in the supermarket
+ * */
 
 public class App {
     public static void main(String[] args) {

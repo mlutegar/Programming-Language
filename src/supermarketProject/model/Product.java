@@ -2,6 +2,13 @@ package supermarketProject.model;
 
 import java.util.Date;
 
+/**
+ * @Author: Michel Lutegar D'Orsi Pereira
+ * @Since: 07/09/2002
+ * @Version: 1.0
+ * @Description: Class responsible for modeling supermarket products
+ * */
+
 public class Product {
     private String name;
     private int quantity;
