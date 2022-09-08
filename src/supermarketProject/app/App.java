@@ -2,6 +2,7 @@ package supermarketProject.app;
 
 import supermarketProject.model.Product;
 import supermarketProject.persist.ProductDAO;
+import supermarketProject.service.ProductService;
 
 import javax.swing.*;
 import java.util.Objects;
@@ -18,7 +19,7 @@ public class App {
     public void insertProduct(){
         Product pro;
         pro = new Product();
-        var service = new ProductDAO();
+        var service = new ProductService();
 
         // Receive user information
         pro.setName(JOptionPane.showInputDialog(null, "Enter the product name: ", "Input Nome", JOptionPane.QUESTION_MESSAGE));
@@ -49,38 +50,44 @@ public class App {
     }
 
     public void listProduct(){
-        var service = new ProductDAO();
+        var service = new ProductService();
+        System.out.println("\n The products listed in the database are: ");
 
         service.findAll().forEach(product -> System.out.println(product.getName()));
         var answerList = service.findAll().stream().map(product ->
-                "\n\nName: " + product.getName() +
+                "\n\nId: " + product.getId() +
+                "\nName: " + product.getName() +
                 "\nQuantity: " + product.getQuantity() +
                 "\nPrice: R$" + product.getPrice() +
                 "\nType: " + product.getType() +
-                "\nProvider: " + product.getProvider()).toList();
+                "\nProvider: " + product.getProvider() +
+                "\nRegister: " + product.getRegister()
+        ).toList();
 
-        JOptionPane.showMessageDialog(null, answerList, "Answer", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(null, answerList.toString().replace("[","").replace("]",""), "Answer", JOptionPane.INFORMATION_MESSAGE);
     }
 
     public void searchById(){
-        var service = new ProductDAO();
+        var service = new ProductService();
 
         var id = JOptionPane.showInputDialog(null, "Enter the product id: ", "Input Id", JOptionPane.QUESTION_MESSAGE);
-        service.findById(Long.parseLong(id)).forEach(product -> System.out.println(product.getName()));
-        var answerListById = service.findById(Long.parseLong(id)).stream().map(product ->
-                "\n\nName: " + product.getName() +
-                "\nQuantity: " + product.getQuantity() +
-                "\nPrice: R$" + product.getPrice() +
-                "\nType: " + product.getType() +
-                "\nProvider: " + product.getProvider()).toList();
+        var product = service.findById(Long.parseLong(id));
 
-        JOptionPane.showMessageDialog(null, answerListById, "Answer", JOptionPane.INFORMATION_MESSAGE);
+        var msg =
+                "\n\nId: " + product.getId() +
+                "\nName: " + product.getName() +
+                "\nQuantity: " + product.getQuantity() +
+                "\nPrice: " + product.getPrice() +
+                "\nType: " + product.getType() +
+                "\nProvider: " + product.getProvider() +
+                "\nRegister: " + product.getRegister();
+        JOptionPane.showMessageDialog(null, msg, "Resposta", JOptionPane.INFORMATION_MESSAGE);
     }
 
     public void updateProduct(){
         Product pro;
         pro = new Product();
-        var service = new ProductDAO();
+        var service = new ProductService();
 
         // Choose the product id you want to change
         var id = JOptionPane.showInputDialog(null, "Enter the product id: ", "Input Id", JOptionPane.QUESTION_MESSAGE);
@@ -114,15 +121,37 @@ public class App {
     }
 
     public void deleteProductById(){
-        var service = new ProductDAO();
+        var service = new ProductService();
 
         var id = JOptionPane.showInputDialog(null, "Enter the product id: ", "Input Id", JOptionPane.QUESTION_MESSAGE);
-        service.deleteById(Long.parseLong(id));
+        var delete = service.deleteById(Long.parseLong(id));
+
+        var situationDelete = "Failed to erase. Check the log: ";
+        var statusDelete = JOptionPane.ERROR_MESSAGE;
+
+        if(delete){
+            situationDelete = "Successfully deleted: ";
+            statusDelete = JOptionPane.INFORMATION_MESSAGE;
+        }
+
+        var deletebyId = "Recording status at the database: " + situationDelete;
+        JOptionPane.showMessageDialog(null, deletebyId, "Answer", statusDelete);
     }
 
     public void deleteAllProducts(){
-        var service = new ProductDAO();
-        service.deleteAll();
+        var service = new ProductService();
+        var delete = service.deleteAll();
+
+        var situationDelete = "Failed to erase. Check the log: ";
+        var statusDelete = JOptionPane.ERROR_MESSAGE;
+
+        if(delete){
+            situationDelete = "Successfully deleted:";
+            statusDelete = JOptionPane.INFORMATION_MESSAGE;
+        }
+
+        var deletebyId = "Recording status at the database:" + situationDelete;
+        JOptionPane.showMessageDialog(null, deletebyId, "Answer", statusDelete);
     }
 
     public static void main(String[] args) {

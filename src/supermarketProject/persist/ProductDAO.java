@@ -69,11 +69,13 @@ public class ProductDAO extends DAO {
             var products = new ArrayList<Product>();
             while(rs.next()) {
                 var product = new Product();
+                product.setId(rs.getInt("id"));
                 product.setName(rs.getString("name"));
                 product.setQuantity(rs.getInt("quantity"));
                 product.setPrice(rs.getFloat("price"));
                 product.setType(rs.getString("type"));
                 product.setProvider(rs.getString("provider"));
+                product.setRegister(rs.getString("register"));
                 products.add(product);
             }
             return products;
@@ -94,7 +96,7 @@ public class ProductDAO extends DAO {
         return null;
     }
 
-    public ArrayList<Product> findById(long id){
+    public Product findById(long id){
         PreparedStatement pstmt = null;
         ResultSet rs = null;
 
@@ -106,20 +108,23 @@ public class ProductDAO extends DAO {
             pstmt.setInt(1, (int) id);
             rs = pstmt.executeQuery();
 
-            var products = new ArrayList<Product>();
-            while(rs.next()) {
-                var product = new Product();
+            var product = new Product();
+
+            if(rs.next()) {
+                product.setId(rs.getInt("id"));
                 product.setName(rs.getString("name"));
                 product.setQuantity(rs.getInt("quantity"));
                 product.setPrice(rs.getFloat("price"));
                 product.setType(rs.getString("type"));
                 product.setProvider(rs.getString("provider"));
-                products.add(product);
+                product.setRegister(rs.getString("register"));
             }
-            return products;
+
+            return product;
         } catch (SQLException e) {
             e.printStackTrace();
             System.err.println("Error on list product. Error: " + e.getMessage());
+            return new Product();
         } finally {
             try {
                 if(pstmt != null)
@@ -131,7 +136,6 @@ public class ProductDAO extends DAO {
                 System.err.println("Error on close statements. Error: " + e.getMessage());
             }
         }
-        return null;
     }
 
     public Boolean update(Product product, long id){
@@ -143,7 +147,7 @@ public class ProductDAO extends DAO {
                     "update product set name = ?, quantity = ?, price = ?, type = ?, provider = ? where id = ?;"
             );
 
-            pstmt.setInt(6, (int) id);
+            pstmt.setLong(6, (int) id);
             pstmt.setString(1, product.getName());
             pstmt.setInt(2, product.getQuantity());
             pstmt.setFloat(3, product.getPrice());
@@ -171,7 +175,7 @@ public class ProductDAO extends DAO {
         }
     }
 
-    public void deleteById(long id){
+    public Boolean deleteById(long id){
         PreparedStatement pstmt = null;
 
         try {
@@ -179,10 +183,19 @@ public class ProductDAO extends DAO {
             pstmt = conn.prepareStatement(
                     "delete from product where id = ?"
             );
+
             pstmt.setInt(1, (int) id);
+
+            var delete = pstmt.executeUpdate();
+
+            if(delete != 0)
+                return Boolean.TRUE;
+            return Boolean.FALSE;
+
         } catch (SQLException e) {
             e.printStackTrace();
             System.err.println("Error on delete product. Error: " + e.getMessage());
+            return Boolean.FALSE;
         } finally {
             try {
                 if(pstmt != null)
@@ -204,9 +217,16 @@ public class ProductDAO extends DAO {
                     "delete from product where id != 0"
             );
 
+            var delete = pstmt.executeUpdate();
+
+            if(delete != 0)
+                return Boolean.TRUE;
+            return Boolean.FALSE;
+
         } catch (SQLException e) {
             e.printStackTrace();
             System.err.println("Error on delete all products. Error: " + e.getMessage());
+            return Boolean.FALSE;
         } finally {
             try {
                 if(pstmt != null)
@@ -218,6 +238,5 @@ public class ProductDAO extends DAO {
                 System.err.println("Error on close statements. Error: " + e.getMessage());
             }
         }
-        return false;
     }
 }

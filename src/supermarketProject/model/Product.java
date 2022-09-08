@@ -1,7 +1,5 @@
 package supermarketProject.model;
 
-import java.util.Date;
-
 /**
  * @Author: Michel Lutegar D'Orsi Pereira
  * @Since: 07/09/2002
@@ -10,12 +8,17 @@ import java.util.Date;
  * */
 
 public class Product {
+    private int id;
     private String name;
     private int quantity;
     private float price;
     private String type;
     private String provider;
-    private Date register;
+    private String register;
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public void setName(String name) {
         this.name = name;
@@ -33,12 +36,16 @@ public class Product {
         this.quantity = quantity;
     }
 
-    public void setRegister(Date register) {
+    public void setRegister(String register) {
         this.register = register;
     }
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public String getName() {
@@ -61,7 +68,7 @@ public class Product {
         return type;
     }
 
-    public Date getRegister() {
+    public String getRegister() {
         return register;
     }
 }
