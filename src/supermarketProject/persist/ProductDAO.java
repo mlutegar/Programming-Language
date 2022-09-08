@@ -93,4 +93,44 @@ public class ProductDAO extends DAO {
         }
         return null;
     }
+
+    public ArrayList<Product> findById(long id){
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+
+        try {
+            conn = getConnection();
+            pstmt = conn.prepareStatement(
+                    "select * from product where id = ?"
+            );
+            pstmt.setInt(1, (int) id);
+            rs = pstmt.executeQuery();
+
+            var products = new ArrayList<Product>();
+            while(rs.next()) {
+                var product = new Product();
+                product.setName(rs.getString("name"));
+                product.setQuantity(rs.getInt("quantity"));
+                product.setPrice(rs.getFloat("price"));
+                product.setType(rs.getString("type"));
+                product.setProvider(rs.getString("provider"));
+                products.add(product);
+            }
+            return products;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            System.err.println("Error on list product. Error: " + e.getMessage());
+        } finally {
+            try {
+                if(pstmt != null)
+                    pstmt.close();
+                if(rs != null)
+                    rs.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+                System.err.println("Error on close statements. Error: " + e.getMessage());
+            }
+        }
+        return null;
+    }
 }

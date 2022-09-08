@@ -56,5 +56,18 @@ public class App {
                 "\nProvider: " + product.getProvider()).toList();
 
         JOptionPane.showMessageDialog(null, answerList, "Answer", JOptionPane.INFORMATION_MESSAGE);
+
+        // List information by id
+        var id = JOptionPane.showInputDialog(null, "Enter the product id: ", "Input Id", JOptionPane.QUESTION_MESSAGE);
+        service.findById(Long.parseLong(id)).forEach(product -> System.out.println(product.getName()));
+        var answerListById = service.findById(Long.parseLong(id)).stream().map(product ->
+                "\n\nName: " + product.getName() +
+                "\nQuantity: " + product.getQuantity() +
+                "\nPrice: R$" + product.getPrice() +
+                "\nType: " + product.getType() +
+                "\nProvider: " + product.getProvider()).toList();
+
+        JOptionPane.showMessageDialog(null, answerListById, "Answer", JOptionPane.INFORMATION_MESSAGE);
+
     }
 }
