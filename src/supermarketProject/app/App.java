@@ -18,13 +18,15 @@ public class App {
         pro = new Product();
 
         var service = new ProductDAO();
-        
+
+        // Receive user information
         pro.setName(JOptionPane.showInputDialog(null, "Enter the product name: ", "Input Nome", JOptionPane.QUESTION_MESSAGE));
         pro.setPrice(Float.parseFloat(JOptionPane.showInputDialog(null, "Enter the product price: ", "Input Price", JOptionPane.QUESTION_MESSAGE)));
         pro.setType(JOptionPane.showInputDialog(null, "Enter the product type: ", "Input Type", JOptionPane.QUESTION_MESSAGE));
         pro.setProvider(JOptionPane.showInputDialog(null, "Enter the product provider: ", "Input Provider", JOptionPane.QUESTION_MESSAGE));
         pro.setQuantity(Integer.parseInt(JOptionPane.showInputDialog(null, "Enter the product quantity: ", "Input Quantity", JOptionPane.QUESTION_MESSAGE)));
 
+        // Insert information into the database
         var situation = "Recording failed. check the log.";
         var statusIcon = JOptionPane.ERROR_MESSAGE;
         var response = service.save(pro);
@@ -34,8 +36,25 @@ public class App {
             statusIcon = JOptionPane.INFORMATION_MESSAGE;
         }
 
-        var msg = "Recording status at the database: " + situation + "\n\n" + "Product.name: " + pro.getName() + "\nProduct.quantity: " + pro.getQuantity() + "\nProduct.price: " + pro.getPrice() + "\nProduct.type: " + pro.getType() + "\nProduct.provider: " + pro.getProvider();
+        var msg =
+                "Recording status at the database: " + situation + "\n\n" +
+                        "Name: " + pro.getName() +
+                        "\nQuantity: " + pro.getQuantity() +
+                        "\nPrice: R$" + pro.getPrice() +
+                        "\nType: " + pro.getType() +
+                        "\nProvider: " + pro.getProvider();
+
         JOptionPane.showMessageDialog(null, msg, "Answer", statusIcon);
 
+        // List information present in the database
+        service.findAll().forEach(product -> System.out.println(product.getName()));
+        var answerList = service.findAll().stream().map(product ->
+                "\n\nName: " + product.getName() +
+                "\nQuantity: " + product.getQuantity() +
+                "\nPrice: R$" + product.getPrice() +
+                "\nType: " + product.getType() +
+                "\nProvider: " + product.getProvider()).toList();
+
+        JOptionPane.showMessageDialog(null, answerList, "Answer", JOptionPane.INFORMATION_MESSAGE);
     }
 }

@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c8d57f3-834d-4ddd-a9c2-991ed979c971" name="Changes" comment="feat: confirming sql connection">
-      <change afterPath="$PROJECT_DIR$/src/supermarketProject/persist/ProductDAO.java" afterDir="false" />
+    <list default="true" id="2c8d57f3-834d-4ddd-a9c2-991ed979c971" name="Changes" comment="feat: creating the data implementation in the database">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/supermarketProject/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/supermarketProject/app/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/supermarketProject/persist/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/supermarketProject/persist/DAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/supermarketProject/persist/ProductDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/supermarketProject/persist/ProductDAO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +127,7 @@
       <workItem from="1662563160051" duration="2773000" />
       <workItem from="1662571158301" duration="133000" />
       <workItem from="1662581535977" duration="290000" />
-      <workItem from="1662581934733" duration="3293000" />
+      <workItem from="1662581934733" duration="4907000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1662330862141</created>
@@ -165,7 +164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662582892972</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat: creating the data implementation in the database">
+      <created>1662594126327</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1662594126327</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,6 +194,7 @@
     <MESSAGE value="feat: creating DAO class" />
     <MESSAGE value="feat: creating docker compose and script.sql" />
     <MESSAGE value="feat: confirming sql connection" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: confirming sql connection" />
+    <MESSAGE value="feat: creating the data implementation in the database" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: creating the data implementation in the database" />
   </component>
 </project>

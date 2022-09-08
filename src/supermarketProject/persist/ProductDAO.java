@@ -4,7 +4,10 @@ import supermarketProject.model.Product;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @Author: Michel Lutegar D'Orsi Pereira
@@ -52,4 +55,42 @@ public class ProductDAO extends DAO {
         }
     }
 
+    public List<Product> findAll() {
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+
+        try {
+            conn = getConnection();
+            pstmt = conn.prepareStatement(
+                    "select * from product"
+            );
+            rs = pstmt.executeQuery();
+
+            var products = new ArrayList<Product>();
+            while(rs.next()) {
+                var product = new Product();
+                product.setName(rs.getString("name"));
+                product.setQuantity(rs.getInt("quantity"));
+                product.setPrice(rs.getFloat("price"));
+                product.setType(rs.getString("type"));
+                product.setProvider(rs.getString("provider"));
+                products.add(product);
+            }
+            return products;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            System.err.println("Error on list product. Error: " + e.getMessage());
+        } finally {
+            try {
+                if(pstmt != null)
+                    pstmt.close();
+                if(rs != null)
+                    rs.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+                System.err.println("Error on close statements. Error: " + e.getMessage());
+            }
+        }
+        return null;
+    }
 }
