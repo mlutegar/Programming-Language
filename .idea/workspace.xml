@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c8d57f3-834d-4ddd-a9c2-991ed979c971" name="Changes" comment="feat: creating database data listing">
+    <list default="true" id="2c8d57f3-834d-4ddd-a9c2-991ed979c971" name="Changes" comment="feat: creating database data listing by id">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/supermarketProject/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/supermarketProject/app/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/supermarketProject/persist/ProductDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/supermarketProject/persist/ProductDAO.java" afterDir="false" />
@@ -127,7 +127,7 @@
       <workItem from="1662563160051" duration="2773000" />
       <workItem from="1662571158301" duration="133000" />
       <workItem from="1662581535977" duration="290000" />
-      <workItem from="1662581934733" duration="7308000" />
+      <workItem from="1662581934733" duration="10717000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1662330862141</created>
@@ -178,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662595749428</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="feat: creating database data listing by id">
+      <created>1662598098285</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1662598098285</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,6 +210,7 @@
     <MESSAGE value="feat: confirming sql connection" />
     <MESSAGE value="feat: creating the data implementation in the database" />
     <MESSAGE value="feat: creating database data listing" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: creating database data listing" />
+    <MESSAGE value="feat: creating database data listing by id" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: creating database data listing by id" />
   </component>
 </project>
