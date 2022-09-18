@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c554a22d-0312-4fd1-ab7c-fc3f1f9ffc91" name="Changes" comment="feat: class 5 updates">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c554a22d-0312-4fd1-ab7c-fc3f1f9ffc91" name="Changes" comment="feat: starting class 6">
+      <change beforePath="$PROJECT_DIR$/src/projetoCRUDbasicoM/static/text.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/static/text.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="aulas/4" />
+        <entry key="$PROJECT_DIR$" value="aulas/5" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -224,6 +224,7 @@
       <workItem from="1662581831720" duration="100000" />
       <workItem from="1663450545719" duration="66000" />
       <workItem from="1663454435888" duration="1785000" />
+      <workItem from="1663541569217" duration="112000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1662318474266</created>
@@ -393,7 +394,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662581850292</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="feat: starting class 6">
+      <created>1663541646005</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1663541646005</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -431,7 +439,8 @@
     <MESSAGE value="feat: creating AlunoDAO" />
     <MESSAGE value="feat: docker configuration" />
     <MESSAGE value="feat: class 5 updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: class 5 updates" />
+    <MESSAGE value="feat: starting class 6" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: starting class 6" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
