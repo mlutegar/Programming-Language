@@ -1,4 +1,5 @@
 Aula que parei:
     Aula 5: finish
     Aula 6.1: finish
-    Aula 6.2: start
+    Aula 6.2: finish
+    Aula 7: start
