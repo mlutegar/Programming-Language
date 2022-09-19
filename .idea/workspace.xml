@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10d465c6-b65e-44bc-8237-bfc98ebb9066" name="Changes" comment="feat: adding new material from class 6.1">
+    <list default="true" id="10d465c6-b65e-44bc-8237-bfc98ebb9066" name="Changes" comment="feat: starting class 7">
+      <change afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/app/AppDeleteAll.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/projetoCRUDbasicoM/app/AppFIndAll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/app/AppFindAll.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/projetoCRUDbasicoM/model/Aluno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/model/Aluno.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/projetoCRUDbasicoM/persist/AlunoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/persist/AlunoDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/projetoCRUDbasicoM/service/AlunoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/service/AlunoService.java" afterDir="false" />
     </list>
@@ -24,7 +27,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="aulas/6" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -38,40 +41,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Git.Branch.Popup.ShowAllRemotes": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Michel Lutegar/IdeaProjects/Programming-Language/libs",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.1484375",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.keymap"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Git.Branch.Popup.ShowAllRemotes&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Michel Lutegar/IdeaProjects/Programming-Language/libs&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.1484375&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ],
-    "RunConfigurationTargetLRU": [
-      "d01d83f1-e413-4713-9ae2-5dd0536ed43c"
+    &quot;RunConfigurationTargetLRU&quot;: [
+      &quot;d01d83f1-e413-4713-9ae2-5dd0536ed43c&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="projetoCRUDbasicoM.app" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AppFindByName">
-    <configuration name="AppFIndAll" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="projetoCRUDbasicoM.app.AppFIndAll" />
+  <component name="RunManager">
+    <configuration name="AppFindAll" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="projetoCRUDbasicoM.app.AppFindAll" />
       <module name="Programming-Language" />
       <extension name="coverage">
         <pattern>
@@ -138,11 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AppFindByName" />
         <item itemvalue="Docker.static: Compose Deployment" />
-        <item itemvalue="Application.AppFindById" />
-        <item itemvalue="Application.AppFIndAll" />
         <item itemvalue="Application.EstruturaDeDecisao" />
+        <item itemvalue="Application.AppFindByName" />
+        <item itemvalue="Application.AppFindById" />
+        <item itemvalue="Application.AppFindAll" />
       </list>
     </recent_temporary>
   </component>
@@ -155,7 +158,12 @@
       <option name="presentableId" value="Default" />
       <updated>1663548257262</updated>
       <workItem from="1663548260572" duration="386000" />
-      <workItem from="1663549000632" duration="5204000" />
+      <workItem from="1663549000632" duration="6343000" />
+      <workItem from="1663591582142" duration="182000" />
+      <workItem from="1663612242033" duration="728000" />
+      <workItem from="1663612999410" duration="238000" />
+      <workItem from="1663613299387" duration="3935000" />
+      <workItem from="1663617296278" duration="2386000" />
     </task>
     <task id="LOCAL-00001" summary="feat: adding new material from class 6.1">
       <created>1663552248469</created>
@@ -164,7 +172,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663552248469</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: adding new material from class 6.2">
+      <created>1663554910394</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1663554910394</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat: starting class 7">
+      <created>1663554952536</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1663554952536</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,22 +205,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: adding new material from class 6.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: adding new material from class 6.1" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/projetoCRUDbasicoM/persist/AlunoDAO.java</url>
-          <line>125</line>
-          <properties class="projetoCRUDbasicoM.persist.AlunoDAO" method="findByName">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="feat: adding new material from class 6.2" />
+    <MESSAGE value="feat: starting class 7" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: starting class 7" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -5,7 +5,7 @@ import projetoCRUDbasicoM.service.AlunoService;
 import javax.swing.*;
 // import java.util.Scanner;
 
-public class AppFIndAll {
+public class AppFindAll {
     public static void main(String[] args) {
         var service = new AlunoService();
 
