@@ -4,24 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10d465c6-b65e-44bc-8237-bfc98ebb9066" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Programming-Language.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/app/AppFindById.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/app/AppFindByName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/app/AppSave.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="10d465c6-b65e-44bc-8237-bfc98ebb9066" name="Changes" comment="feat: adding new material from class 6.1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/projetoCRUDbasicoM/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/app/AppFIndAll.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/projetoCRUDbasicoM/app/ControleFluxo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/examples/ControleFluxo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/projetoCRUDbasicoM/persist/AlunoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/persist/AlunoDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/projetoCRUDbasicoM/service/AlunoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/service/AlunoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/projetoCRUDbasicoM/static/script.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/static/script.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/projetoCRUDbasicoM/static/text.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/static/text.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/projetoCRUDbasicoM/structures/EstruturaDeDecisao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/examples/EstruturaDeDecisao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/projetoCRUDbasicoM/structures/EstruturaDeRepeticao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/examples/EstruturaDeRepeticao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +53,7 @@
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.1484375",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
+    "settings.editor.selected.configurable": "preferences.keymap"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -83,7 +69,7 @@
       <recent name="projetoCRUDbasicoM.app" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.AppFindByName">
     <configuration name="AppFIndAll" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="projetoCRUDbasicoM.app.AppFIndAll" />
       <module name="Programming-Language" />
@@ -99,6 +85,19 @@
     </configuration>
     <configuration name="AppFindById" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="projetoCRUDbasicoM.app.AppFindById" />
+      <module name="Programming-Language" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="projetoCRUDbasicoM.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppFindByName" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="projetoCRUDbasicoM.app.AppFindByName" />
       <module name="Programming-Language" />
       <extension name="coverage">
         <pattern>
@@ -139,6 +138,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AppFindByName" />
         <item itemvalue="Docker.static: Compose Deployment" />
         <item itemvalue="Application.AppFindById" />
         <item itemvalue="Application.AppFIndAll" />
@@ -155,8 +155,16 @@
       <option name="presentableId" value="Default" />
       <updated>1663548257262</updated>
       <workItem from="1663548260572" duration="386000" />
-      <workItem from="1663549000632" duration="3096000" />
+      <workItem from="1663549000632" duration="5204000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: adding new material from class 6.1">
+      <created>1663552248469</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1663552248469</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,6 +180,25 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: adding new material from class 6.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: adding new material from class 6.1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/projetoCRUDbasicoM/persist/AlunoDAO.java</url>
+          <line>125</line>
+          <properties class="projetoCRUDbasicoM.persist.AlunoDAO" method="findByName">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

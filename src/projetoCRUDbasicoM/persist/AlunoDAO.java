@@ -130,9 +130,9 @@ public class AlunoDAO extends DAO {
         try {
             conn = getConnection();
             stmt = conn.prepareStatement(
-                    "select * from aluno where nome = ?"
+                    "select * from aluno where nome like ?"
             );
-            stmt.setString(1, nome);
+            stmt.setString(1, '%' + nome + '%'); // '' para char "" para string
             rs = stmt.executeQuery();
 
             var alunos = new ArrayList<Aluno>();
@@ -163,16 +163,108 @@ public class AlunoDAO extends DAO {
         }
     }
 
-}
-    /*public  List<Aluno> findByName(String nome){}
-    //public  Aluno findByMatricula(int matricula){}
-    //public  Aluno findByEmail(String email){}
+    public  Aluno findByMatricula(int matricula){
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
 
+        try {
+            conn = getConnection();
+            pstmt = conn.prepareStatement("select * from aluno where matricula = ?");
+            pstmt.setInt(1, matricula);
+            rs = pstmt.executeQuery();
+
+            Aluno aluno = new Aluno();
+            if (rs.next()) {
+                aluno.setNome(rs.getString("nome"));
+                aluno.setEmail(rs.getString("email"));
+                aluno.setMatricula(rs.getInt("matricula"));
+                aluno.setSexo(rs.getString("sexo"));
+            }
+            return aluno;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            System.err.println("Error on find id aluno. Error: " + e.getMessage());
+            return new Aluno();
+        } finally {
+            try {
+                if (pstmt != null)
+                    pstmt.close();
+                if (rs != null)
+                    rs.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+                System.err.println("Error on close statements. Error: " + e.getMessage());
+            }
+        }
+    }
+
+    public  Aluno findByEmail(String email){
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+
+        try {
+            conn = getConnection();
+            pstmt = conn.prepareStatement("select * from aluno where email = ?");
+            pstmt.setString(1, email);
+            rs = pstmt.executeQuery();
+
+            Aluno aluno = new Aluno();
+            if (rs.next()) {
+                aluno.setNome(rs.getString("nome"));
+                aluno.setEmail(rs.getString("email"));
+                aluno.setMatricula(rs.getInt("matricula"));
+                aluno.setSexo(rs.getString("sexo"));
+            }
+            return aluno;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            System.err.println("Error on find id aluno. Error: " + e.getMessage());
+            return new Aluno();
+        } finally {
+            try {
+                if (pstmt != null)
+                    pstmt.close();
+                if (rs != null)
+                    rs.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+                System.err.println("Error on close statements. Error: " + e.getMessage());
+            }
+        }
+    }
+
+    public boolean deleteById(long id) {
+        PreparedStatement stmt = null;
+
+        try {
+            conn = getConnection();
+            stmt = conn.prepareStatement("delete from aluno where id = ?");
+            stmt.setLong(1, id);
+
+            var response = stmt.executeUpdate();
+
+            if(response != 0)
+                return Boolean.TRUE;
+            return Boolean.FALSE;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            System.err.println("Error on delete aluno. Error: " + e.getMessage());
+            return Boolean.FALSE;
+        } finally {
+            try {
+                if(conn != null)
+                    conn.close();
+                if(stmt != null)
+                    stmt.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+                System.err.println("Error on close statements. Error: " + e.getMessage());
+            }
+        }
+    }
+
+}
 
     // public  Aluno update(Aluno aluno) {}
 
-    // public boolean deleteById(long id) {}
-
     // public boolean deleteAll() {}
-
-*/

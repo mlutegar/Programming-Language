@@ -22,4 +22,10 @@ public class AlunoService {
     public Aluno findById(long id){ return dao.findById(id);}
 
     public List<Aluno> findByName(String nome){ return dao.findByName(nome);}
+
+    public Aluno findByMatricula(int matricula){ return dao.findByMatricula(matricula);}
+
+    public Aluno findByEmail(String email){ return dao.findByEmail(email);}
+
+    public boolean deleteById(long id) {return dao.deleteById(id);}
 }
