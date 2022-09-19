@@ -1,4 +1,4 @@
-package projetoCRUDbasicoM.structures;
+package projetoCRUDbasicoM.examples;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -30,7 +30,7 @@ public class EstruturaDeRepeticao {
 
         while(true) {
             i++;
-            if(i == 500000)
+            if(i == 10)
                 test = true;
 
             if(test)

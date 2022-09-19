@@ -9,25 +9,25 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AlunoDAO extends DAO{
+public class AlunoDAO extends DAO {
     private Connection conn;
 
     public boolean save(Aluno aluno) {
-        PreparedStatement pstmt = null;
+        PreparedStatement stmt = null;
 
         try {
             conn = getConnection();
-            pstmt = conn.prepareStatement(
+            stmt = conn.prepareStatement(
                     "insert into aluno (nome, email, matricula, sexo) values (?, ?, ?, ?)"
             );
 
-            pstmt.setString(1, aluno.getNome());
-            pstmt.setString(2, aluno.getEmail());
-            pstmt.setInt(3, aluno.getMatricula());
-            pstmt.setString(4, aluno.getSexo());
+            stmt.setString(1, aluno.getNome());
+            stmt.setString(2, aluno.getEmail());
+            stmt.setInt(3, aluno.getMatricula());
+            stmt.setString(4, aluno.getSexo());
 
-            var response = pstmt.executeUpdate();
-            if(response != 0)
+            var response = stmt.executeUpdate();
+            if (response != 0)
                 return Boolean.TRUE;
 
             return Boolean.FALSE;
@@ -40,8 +40,8 @@ public class AlunoDAO extends DAO{
             try {
                 if (conn != null)
                     conn.close();
-                if(pstmt != null)
-                    pstmt.close();
+                if (stmt != null)
+                    stmt.close();
             } catch (SQLException e) {
                 e.printStackTrace();
                 System.err.println("Error on close statements. Error:  " + e.getMessage());
@@ -50,21 +50,18 @@ public class AlunoDAO extends DAO{
     }
 
     public List<Aluno> findAll() {
-
-
-
-        PreparedStatement pstmt = null;
+        PreparedStatement stmt = null;
         ResultSet rs = null;
 
         try {
             conn = getConnection();
-            pstmt = conn.prepareStatement(
+            stmt = conn.prepareStatement(
                     "select * from aluno"
             );
-            rs = pstmt.executeQuery();
+            rs = stmt.executeQuery();
 
             var alunos = new ArrayList<Aluno>();
-            while(rs.next()) {
+            while (rs.next()) {
                 var aluno = new Aluno();
                 aluno.setNome(rs.getString("nome"));
                 aluno.setEmail(rs.getString("email"));
@@ -77,21 +74,100 @@ public class AlunoDAO extends DAO{
         } catch (SQLException e) {
             e.printStackTrace();
             System.err.println("Error on list aluno. Error:  " + e.getMessage());
+            return new ArrayList<>();
         } finally {
             try {
-                if(pstmt != null)
-                    pstmt.close();
-                if(rs != null)
+                if (stmt != null)
+                    stmt.close();
+                if (rs != null)
                     rs.close();
             } catch (SQLException e) {
                 e.printStackTrace();
                 System.err.println("Error on close statements. Error:  " + e.getMessage());
             }
         }
-        return null;
     }
 
-    // public  Aluno findById(long id){}
+    public Aluno findById(long id) {
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+
+        try {
+            conn = getConnection();
+            pstmt = conn.prepareStatement("select * from aluno where id = ?");
+            pstmt.setLong(1, id);
+            rs = pstmt.executeQuery();
+
+            Aluno aluno = new Aluno();
+            if (rs.next()) {
+                aluno.setNome(rs.getString("nome"));
+                aluno.setEmail(rs.getString("email"));
+                aluno.setMatricula(rs.getInt("matricula"));
+                aluno.setSexo(rs.getString("sexo"));
+            }
+            return aluno;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            System.err.println("Error on find id aluno. Error: " + e.getMessage());
+            return new Aluno();
+        } finally {
+            try {
+                if (pstmt != null)
+                    pstmt.close();
+                if (rs != null)
+                    rs.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+                System.err.println("Error on close statements. Error: " + e.getMessage());
+            }
+        }
+    }
+
+    public List<Aluno> findByName(String nome){
+        PreparedStatement stmt = null;
+        ResultSet rs = null;
+
+        try {
+            conn = getConnection();
+            stmt = conn.prepareStatement(
+                    "select * from aluno where nome = ?"
+            );
+            stmt.setString(1, nome);
+            rs = stmt.executeQuery();
+
+            var alunos = new ArrayList<Aluno>();
+            while (rs.next()) {
+                var aluno = new Aluno();
+                aluno.setNome(rs.getString("nome"));
+                aluno.setEmail(rs.getString("email"));
+                aluno.setMatricula(rs.getInt("matricula"));
+                aluno.setSexo(rs.getString("sexo"));
+                alunos.add(aluno);
+            }
+            return alunos;
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+            System.err.println("Error on list aluno. Error:  " + e.getMessage());
+            return new ArrayList<>();
+        } finally {
+            try {
+                if (stmt != null)
+                    stmt.close();
+                if (rs != null)
+                    rs.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+                System.err.println("Error on close statements. Error:  " + e.getMessage());
+            }
+        }
+    }
+
+}
+    /*public  List<Aluno> findByName(String nome){}
+    //public  Aluno findByMatricula(int matricula){}
+    //public  Aluno findByEmail(String email){}
+
 
     // public  Aluno update(Aluno aluno) {}
 
@@ -99,4 +175,4 @@ public class AlunoDAO extends DAO{
 
     // public boolean deleteAll() {}
 
-}
+*/

@@ -1,4 +1,4 @@
-package projetoCRUDbasicoM.app;
+package projetoCRUDbasicoM.examples;
 
 public class ControleFluxo {
     public static void main(String[] args) {

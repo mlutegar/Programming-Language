@@ -1,5 +1,7 @@
 create database if not exists db01;
 
+use db01;
+
 create table if not exists aluno(
   id int primary key auto_increment,
   nome varchar(150) not null,

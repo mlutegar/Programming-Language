@@ -4,8 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c554a22d-0312-4fd1-ab7c-fc3f1f9ffc91" name="Changes" comment="feat: starting class 6">
+    <list default="true" id="10d465c6-b65e-44bc-8237-bfc98ebb9066" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/Programming-Language.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/app/AppFindById.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/app/AppFindByName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/app/AppSave.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/projetoCRUDbasicoM/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/app/AppFIndAll.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/projetoCRUDbasicoM/app/ControleFluxo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/examples/ControleFluxo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/projetoCRUDbasicoM/persist/AlunoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/persist/AlunoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/projetoCRUDbasicoM/service/AlunoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/service/AlunoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/projetoCRUDbasicoM/static/script.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/static/script.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/projetoCRUDbasicoM/static/text.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/static/text.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/projetoCRUDbasicoM/structures/EstruturaDeDecisao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/examples/EstruturaDeDecisao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/projetoCRUDbasicoM/structures/EstruturaDeRepeticao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/projetoCRUDbasicoM/examples/EstruturaDeRepeticao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +31,6 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -23,95 +38,68 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="aulas/5" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitToolBoxStore">
-    <option name="projectConfigVersion" value="5" />
-    <option name="recentBranches">
-      <RecentBranches>
-        <option name="branchesForRepo">
-          <list>
-            <RecentBranchesForRepo>
-              <option name="branches">
-                <list>
-                  <RecentBranch>
-                    <option name="branchName" value="aulas/5" />
-                    <option name="lastUsedInstant" value="1662581843" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="aulas/4" />
-                    <option name="lastUsedInstant" value="1662562959" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="aulas/3" />
-                    <option name="lastUsedInstant" value="1662342663" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="aulas/2" />
-                    <option name="lastUsedInstant" value="1662331154" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="aulas/1" />
-                    <option name="lastUsedInstant" value="1662331104" />
-                  </RecentBranch>
-                </list>
-              </option>
-              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
-            </RecentBranchesForRepo>
-          </list>
-        </option>
-      </RecentBranches>
-    </option>
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2EJc7tY75mQCs1PFDrje9nDEGux" />
+  <component name="ProjectId" id="2ExroqN7SqF4AoTri8lCvJhDNVO" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Michel Lutegar/IdeaProjects/projetoCRUDbasico_Michel&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Git.Branch.Popup.ShowAllRemotes": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Michel Lutegar/IdeaProjects/Programming-Language/libs",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.1484375",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ],
+    "RunConfigurationTargetLRU": [
+      "d01d83f1-e413-4713-9ae2-5dd0536ed43c"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\OneDrive\Documentos\IdeaProjects\projetoCRUDbasico_Michel\libs" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\OneDrive\Documentos\IdeaProjects\projetoCRUDbasico_Michel\src\projetoCRUDbasicoM\static" />
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="projetoCRUDbasicoM.app" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.App">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="projetoCRUDbasicoM.app.App" />
-      <module name="projetoCRUDbasicoM" />
+  <component name="RunManager">
+    <configuration name="AppFIndAll" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="projetoCRUDbasicoM.app.AppFIndAll" />
+      <module name="Programming-Language" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="projetoCRUDbasicoM.examples.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppFindById" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="projetoCRUDbasicoM.app.AppFindById" />
+      <module name="Programming-Language" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="projetoCRUDbasicoM.app.*" />
@@ -122,12 +110,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DAO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="projetoCRUDbasicoM.persist.DAO" />
-      <module name="projetoCRUDbasicoM" />
+    <configuration name="EstruturaDeDecisao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="projetoCRUDbasicoM.examples.EstruturaDeDecisao" />
+      <module name="Programming-Language" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="projetoCRUDbasicoM.persist.*" />
+          <option name="PATTERN" value="projetoCRUDbasicoM.examples.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -135,56 +123,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EstruturaDeRepeticao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="projetoCRUDbasicoM.structures.EstruturaDeRepeticao" />
-      <module name="projetoCRUDbasicoM" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="projetoCRUDbasicoM.structures.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MySQL Config" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
-      <deployment type="docker-image">
-        <settings>
-          <option name="imageTag" value="mysql:8.0" />
-          <option name="containerName" value="MySQLContainer" />
-          <option name="envVars">
-            <list>
-              <DockerEnvVarImpl>
-                <option name="name" value="MYSQL_ROOT_PASSWORD" />
-                <option name="value" value="password" />
-              </DockerEnvVarImpl>
-              <DockerEnvVarImpl>
-                <option name="name" value="MYSQL_DATABASE" />
-                <option name="value" value="myOB" />
-              </DockerEnvVarImpl>
-            </list>
-          </option>
-          <option name="portBindings">
-            <list>
-              <DockerPortBindingImpl>
-                <option name="containerPort" value="3306" />
-                <option name="hostPort" value="3306" />
-              </DockerPortBindingImpl>
-            </list>
-          </option>
-        </settings>
-      </deployment>
+    <configuration name="console.sql" type="DatabaseScript" editBeforeRun="true" nameIsGenerated="true">
+      <script-file value="$APPLICATION_CONFIG_DIR$/consoles/db/d01d83f1-e413-4713-9ae2-5dd0536ed43c/console.sql" />
+      <script-mode>FILE</script-mode>
+      <data-source id="d01d83f1-e413-4713-9ae2-5dd0536ed43c" />
       <method v="2" />
     </configuration>
-    <configuration name="static.db: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+    <configuration name="static: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
-          <option name="services">
-            <list>
-              <option value="db" />
-            </list>
-          </option>
           <option name="sourceFilePath" value="src/projetoCRUDbasicoM/static/docker-compose.yml" />
         </settings>
       </deployment>
@@ -192,216 +139,24 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.App" />
-        <item itemvalue="Application.DAO" />
-        <item itemvalue="Docker.MySQL Config" />
-        <item itemvalue="Docker.static.db: Compose Deployment" />
-        <item itemvalue="Application.EstruturaDeRepeticao" />
+        <item itemvalue="Docker.static: Compose Deployment" />
+        <item itemvalue="Application.AppFindById" />
+        <item itemvalue="Application.AppFIndAll" />
+        <item itemvalue="Application.EstruturaDeDecisao" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c554a22d-0312-4fd1-ab7c-fc3f1f9ffc91" name="Changes" comment="" />
-      <created>1662316976035</created>
+      <changelist id="10d465c6-b65e-44bc-8237-bfc98ebb9066" name="Changes" comment="" />
+      <created>1663548257262</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1662316976035</updated>
-      <workItem from="1662316976037" duration="2962000" />
-      <workItem from="1662320306054" duration="875000" />
-      <workItem from="1662326659285" duration="1077000" />
-      <workItem from="1662330992962" duration="3081000" />
-      <workItem from="1662339588161" duration="3464000" />
-      <workItem from="1662343994512" duration="857000" />
-      <workItem from="1662376930114" duration="4647000" />
-      <workItem from="1662426321369" duration="138000" />
-      <workItem from="1662428105869" duration="12000" />
-      <workItem from="1662429476053" duration="1127000" />
-      <workItem from="1662558670474" duration="10201000" />
-      <workItem from="1662571158791" duration="138000" />
-      <workItem from="1662571366133" duration="8698000" />
-      <workItem from="1662581831720" duration="100000" />
-      <workItem from="1663450545719" duration="66000" />
-      <workItem from="1663454435888" duration="1785000" />
-      <workItem from="1663541569217" duration="112000" />
+      <updated>1663548257262</updated>
+      <workItem from="1663548260572" duration="386000" />
+      <workItem from="1663549000632" duration="3096000" />
     </task>
-    <task id="LOCAL-00001" summary="first commit">
-      <created>1662318474266</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1662318474266</updated>
-    </task>
-    <task id="LOCAL-00002" summary="first commit">
-      <created>1662318769317</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1662318769317</updated>
-    </task>
-    <task id="LOCAL-00003" summary="first commit">
-      <created>1662319170783</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1662319170783</updated>
-    </task>
-    <task id="LOCAL-00004" summary="feat: creation of model and app packages">
-      <created>1662320562919</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1662320562919</updated>
-    </task>
-    <task id="LOCAL-00005" summary="feat: creation Aluno.java">
-      <created>1662327367183</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1662327367183</updated>
-    </task>
-    <task id="LOCAL-00006" summary="first commit">
-      <created>1662327606582</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1662327606582</updated>
-    </task>
-    <task id="LOCAL-00007" summary="feat: adding methods in Aluno class">
-      <created>1662331221673</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1662331221673</updated>
-    </task>
-    <task id="LOCAL-00008" summary="feat: adding input and output information">
-      <created>1662341088081</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1662341088081</updated>
-    </task>
-    <task id="LOCAL-00009" summary="feat: adding flow control">
-      <created>1662342594371</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1662342594371</updated>
-    </task>
-    <task id="LOCAL-00010" summary="feat: creating users package">
-      <created>1662343056713</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1662343056713</updated>
-    </task>
-    <task id="LOCAL-00011" summary="feat: creating AlunoTecnico.java">
-      <created>1662344834538</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1662344834538</updated>
-    </task>
-    <task id="LOCAL-00012" summary="feat: studying repetition and decision structures">
-      <created>1662381620026</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1662381620026</updated>
-    </task>
-    <task id="LOCAL-00013" summary="feat: adding new repeating structures">
-      <created>1662560234477</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1662560234477</updated>
-    </task>
-    <task id="LOCAL-00014" summary="feat: adding for each structure">
-      <created>1662561409722</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1662561409722</updated>
-    </task>
-    <task id="LOCAL-00015" summary="feat: adding Collection.sort">
-      <created>1662562939077</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1662562939077</updated>
-    </task>
-    <task id="LOCAL-00016" summary="feat: creating DAO class">
-      <created>1662564723551</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1662564723551</updated>
-    </task>
-    <task id="LOCAL-00017" summary="feat: adding Bolo class for understanding of necessary and not necessary attributes">
-      <created>1662565678978</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1662565678978</updated>
-    </task>
-    <task id="LOCAL-00018" summary="feat: adding enum class">
-      <created>1662567500619</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1662567500619</updated>
-    </task>
-    <task id="LOCAL-00019" summary="fix: correcting the position of Bolo and TipoBolo classes">
-      <created>1662568273071</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1662568273071</updated>
-    </task>
-    <task id="LOCAL-00020" summary="feat: adding libs folder">
-      <created>1662570013713</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1662570013713</updated>
-    </task>
-    <task id="LOCAL-00021" summary="feat: creating AlunoDAO">
-      <created>1662572662109</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1662572662109</updated>
-    </task>
-    <task id="LOCAL-00022" summary="feat: docker configuration">
-      <created>1662578651026</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1662578651026</updated>
-    </task>
-    <task id="LOCAL-00023" summary="feat: class 5 updates">
-      <created>1662581505075</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1662581505076</updated>
-    </task>
-    <task id="LOCAL-00024" summary="feat: class 5 updates">
-      <created>1662581850292</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1662581850292</updated>
-    </task>
-    <task id="LOCAL-00025" summary="feat: starting class 6">
-      <created>1663541646005</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1663541646005</updated>
-    </task>
-    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -417,30 +172,6 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: creation of model and app packages" />
-    <MESSAGE value="feat: creation Aluno.java" />
-    <MESSAGE value="first commit" />
-    <MESSAGE value="feat: adding methods in Aluno class" />
-    <MESSAGE value="feat: adding input and output information" />
-    <MESSAGE value="feat: adding flow control" />
-    <MESSAGE value="feat: creating users package" />
-    <MESSAGE value="feat: creating AlunoTecnico.java" />
-    <MESSAGE value="feat: studying repetition and decision structures" />
-    <MESSAGE value="feat: adding new repeating structures" />
-    <MESSAGE value="feat: adding for each structure" />
-    <MESSAGE value="feat: adding Collection.sort" />
-    <MESSAGE value="feat: creating DAO class" />
-    <MESSAGE value="feat: adding Bolo class for understanding of necessary and not necessary attributes" />
-    <MESSAGE value="feat: adding enum class" />
-    <MESSAGE value="fix: correcting the position of Bolo and TipoBolo classes" />
-    <MESSAGE value="feat: adding libs folder" />
-    <MESSAGE value="feat: creating AlunoDAO" />
-    <MESSAGE value="feat: docker configuration" />
-    <MESSAGE value="feat: class 5 updates" />
-    <MESSAGE value="feat: starting class 6" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: starting class 6" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
