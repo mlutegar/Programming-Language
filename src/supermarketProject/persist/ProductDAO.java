@@ -1,5 +1,7 @@
 package supermarketProject.persist;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import supermarketProject.model.Product;
 
 import java.sql.Connection;
@@ -8,6 +10,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * @Author: Michel Lutegar D'Orsi Pereira
@@ -17,226 +20,155 @@ import java.util.List;
  * */
 
 public class ProductDAO extends DAO {
-    private Connection conn;
-
+    private static Logger logger = LoggerFactory.getLogger(ProductDAO.class);
     public boolean save(Product product) {
-        PreparedStatement pstmt = null;
+        var sql = "insert into product(name, quantity, price, type, provider) values (?, ?, ?, ?, ?)";
 
-        try {
-            conn = getConnection();
-            pstmt = conn.prepareStatement(
-                    "insert into product(name, quantity, price, type, provider) values (?, ?, ?, ?, ?)"
-            );
-
+        try (Connection conn = getConnection(); PreparedStatement pstmt = conn.prepareStatement(sql)){
             pstmt.setString(1, product.getName());
             pstmt.setInt(2, product.getQuantity());
             pstmt.setFloat(3, product.getPrice());
             pstmt.setString(4, product.getType());
             pstmt.setString(5, product.getProvider());
 
-            var response = pstmt.executeUpdate();
-            if(response != 0)
-                return Boolean.TRUE;
-            return Boolean.FALSE;
+            logger.debug("Query executada: {}", sql);
+            return (pstmt.executeUpdate() != 0) ? Boolean.TRUE : Boolean.FALSE; // retorna error => 0 | success => 1
+
         } catch (SQLException e) {
             e.printStackTrace();
-            System.err.println("Error on save product. Error: " + e.getMessage());
+            logger.error("Error on save product. Error: {}", e.getMessage());
             return Boolean.FALSE;
-        } finally {
-            try {
-                if (conn != null)
-                    conn.close();
-                if (pstmt != null)
-                    pstmt.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-                System.err.println("Error on close statements. Error: " + e.getMessage());
-            }
         }
     }
-
     public List<Product> findAll() {
-        PreparedStatement pstmt = null;
-        ResultSet rs = null;
-
-        try {
-            conn = getConnection();
-            pstmt = conn.prepareStatement(
-                    "select * from product"
-            );
-            rs = pstmt.executeQuery();
-
-            var products = new ArrayList<Product>();
-            while(rs.next()) {
-                var product = new Product();
-                product.setId(rs.getInt("id"));
-                product.setName(rs.getString("name"));
-                product.setQuantity(rs.getInt("quantity"));
-                product.setPrice(rs.getFloat("price"));
-                product.setType(rs.getString("type"));
-                product.setProvider(rs.getString("provider"));
-                product.setRegister(rs.getString("register"));
-                products.add(product);
+        var products = new ArrayList<Product>();
+        var sql = "select * from product";
+        try (Connection conn = getConnection(); PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            logger.info("Query executada: {}", sql);
+            try (ResultSet rs = pstmt.executeQuery()) {
+                while (rs.next()) {
+                    products.add(setProduct(rs));
+                }
             }
-            return products;
         } catch (SQLException e) {
             e.printStackTrace();
-            System.err.println("Error on list product. Error: " + e.getMessage());
-        } finally {
-            try {
-                if(pstmt != null)
-                    pstmt.close();
-                if(rs != null)
-                    rs.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-                System.err.println("Error on close statements. Error: " + e.getMessage());
-            }
+            logger.error("Error on list products. Error: {}", e.getMessage());
+            return new ArrayList<>();
         }
-        return null;
+        return products;
     }
-
     public Product findById(long id){
-        PreparedStatement pstmt = null;
-        ResultSet rs = null;
+        var sql = "select * from product where id = ?";
+        try (Connection conn = getConnection(); PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setLong(1, id);
 
-        try {
-            conn = getConnection();
-            pstmt = conn.prepareStatement(
-                    "select * from product where id = ?"
-            );
-            pstmt.setInt(1, (int) id);
-            rs = pstmt.executeQuery();
-
-            var product = new Product();
-
-            if(rs.next()) {
-                product.setId(rs.getInt("id"));
-                product.setName(rs.getString("name"));
-                product.setQuantity(rs.getInt("quantity"));
-                product.setPrice(rs.getFloat("price"));
-                product.setType(rs.getString("type"));
-                product.setProvider(rs.getString("provider"));
-                product.setRegister(rs.getString("register"));
+            logger.info("Query executada: {}", sql);
+            try (ResultSet rs = pstmt.executeQuery()) {
+                return rs.next() ? setProduct(rs) : new Product();
             }
-
-            return product;
         } catch (SQLException e) {
             e.printStackTrace();
-            System.err.println("Error on list product. Error: " + e.getMessage());
+            logger.error("Error on find id product. Error: {}", e.getMessage());
             return new Product();
-        } finally {
-            try {
-                if(pstmt != null)
-                    pstmt.close();
-                if(rs != null)
-                    rs.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-                System.err.println("Error on close statements. Error: " + e.getMessage());
-            }
         }
     }
-
+    public List<Product> findByName(String name) {
+        var products = new ArrayList<Product>();
+        var sql = "select * from product where name like ?";
+        try (Connection conn = getConnection(); PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setString(1, '%' + name + '%');
+            logger.info("Query executada: {}", sql);
+            try (ResultSet rs = pstmt.executeQuery()) {
+                while (rs.next()) {
+                    products.add(setProduct(rs));
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            logger.error("Error on list products. Error: {}", e.getMessage());
+            return new ArrayList<>();
+        }
+        return products;
+    }
+    public List<Product> findByType(String type) {
+        var products = new ArrayList<Product>();
+        var sql = "select * from product where type like ?";
+        try (Connection conn = getConnection(); PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setString(1, '%' + type + '%');
+            logger.info("Query executada: {}", sql);
+            try (ResultSet rs = pstmt.executeQuery()) {
+                while (rs.next()) {
+                    products.add(setProduct(rs));
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            logger.error("Error on list products. Error: {}", e.getMessage());
+            return new ArrayList<>();
+        }
+        return products;
+    }
+    public List<Product> findByProvider(String provider) {
+        var products = new ArrayList<Product>();
+        var sql = "select * from product where provider like ?";
+        try (Connection conn = getConnection(); PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setString(1, '%' + provider + '%');
+            logger.info("Query executada: {}", sql);
+            try (ResultSet rs = pstmt.executeQuery()) {
+                while (rs.next()) {
+                    products.add(setProduct(rs));
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            logger.error("Error on list products. Error: {}", e.getMessage());
+            return new ArrayList<>();
+        }
+        return products;
+    }
     public Boolean update(Product product, long id){
-        PreparedStatement pstmt = null;
-
-        try {
-            conn = getConnection();
-            pstmt = conn.prepareStatement(
-                    "update product set name = ?, quantity = ?, price = ?, type = ?, provider = ? where id = ?;"
-            );
-
+        var sql = "update product set name = ?, quantity = ?, price = ?, type = ?, provider = ? where id  = ?";
+        try (Connection conn = getConnection(); PreparedStatement pstmt = conn.prepareStatement(sql)){
             pstmt.setLong(6, (int) id);
             pstmt.setString(1, product.getName());
             pstmt.setInt(2, product.getQuantity());
             pstmt.setFloat(3, product.getPrice());
             pstmt.setString(4, product.getType());
             pstmt.setString(5, product.getProvider());
-
-            var response = pstmt.executeUpdate();
-            if(response != 0)
-                return Boolean.TRUE;
-            return Boolean.FALSE;
+            logger.info("Query executada: {}", sql);
+            return (pstmt.executeUpdate() != 0) ? Boolean.TRUE : Boolean.FALSE;
         } catch (SQLException e) {
             e.printStackTrace();
-            System.err.println("Error on save product. Error: " + e.getMessage());
+            logger.error("Error on save product. Error: {}", e.getMessage());
             return Boolean.FALSE;
-        } finally {
-            try {
-                if (conn != null)
-                    conn.close();
-                if (pstmt != null)
-                    pstmt.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-                System.err.println("Error on close statements. Error: " + e.getMessage());
-            }
         }
     }
-
     public Boolean deleteById(long id){
-        PreparedStatement pstmt = null;
-
-        try {
-            conn = getConnection();
-            pstmt = conn.prepareStatement(
-                    "delete from product where id = ?"
-            );
-
-            pstmt.setInt(1, (int) id);
-
-            var delete = pstmt.executeUpdate();
-
-            if(delete != 0)
-                return Boolean.TRUE;
-            return Boolean.FALSE;
-
+        var sql = "delete from product where id = ?";
+        try (Connection conn = getConnection(); PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setLong(1, id);
+            logger.info("Query executada: {}", sql);
+            return (pstmt.executeUpdate() != 0) ? Boolean.TRUE : Boolean.FALSE;
         } catch (SQLException e) {
             e.printStackTrace();
-            System.err.println("Error on delete product. Error: " + e.getMessage());
+            logger.error("Error on delete product. Error: {}", e.getMessage());
             return Boolean.FALSE;
-        } finally {
-            try {
-                if(pstmt != null)
-                    pstmt.close();
-                if(conn != null)
-                    conn.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-                System.err.println("Error on close statements. Error: " + e.getMessage());
-            }
         }
     }
-
-    public boolean deleteAll(){
-        PreparedStatement pstmt = null;
-        try {
-            conn = getConnection();
-            pstmt = conn.prepareStatement(
-                    "delete from product where id != 0"
-            );
-
-            var delete = pstmt.executeUpdate();
-
-            if(delete != 0)
-                return Boolean.TRUE;
-            return Boolean.FALSE;
-
+    public boolean deleteAll(List<Product> products) {
+        var sql = "delete from product where id in (?)";
+        var sqlIN = products.stream().map(product -> String.valueOf(product.getId())).collect(Collectors.joining(",", "(", ")"));
+        sql = sql.replace("(?)", sqlIN);
+        try (Connection conn = getConnection(); PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            logger.info("Query executada: {}", sql);
+            return (pstmt.executeUpdate() != 0) ? Boolean.TRUE : Boolean.FALSE;
         } catch (SQLException e) {
             e.printStackTrace();
-            System.err.println("Error on delete all products. Error: " + e.getMessage());
+            logger.error("Error on delete table product. Error: {}", e.getMessage());
             return Boolean.FALSE;
-        } finally {
-            try {
-                if(pstmt != null)
-                    pstmt.close();
-                if(conn != null)
-                    conn.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-                System.err.println("Error on close statements. Error: " + e.getMessage());
-            }
         }
+    }
+    private Product setProduct(ResultSet rs) throws SQLException {
+        return new Product(rs.getInt("id"), rs.getString("name"), rs.getInt("quantity"), rs.getFloat("price"), rs.getString("type"), rs.getString("provider"), rs.getString("register"));
     }
 }

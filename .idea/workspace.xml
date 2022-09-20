@@ -4,12 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c8d57f3-834d-4ddd-a9c2-991ed979c971" name="Changes" comment="feat: adding new methods">
-      <change afterPath="$PROJECT_DIR$/src/supermarketProject/service/ProductService.java" afterDir="false" />
+    <list default="true" id="fcc5fa66-c5ef-489b-9f40-dce141bd8d0c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/supermarketProject.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/slf4j-api-2.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/supermarketProject/app/AppData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/supermarketProject/app/AppDelete.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/supermarketProject/app/AppSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/supermarketProject/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/supermarketProject/app/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/supermarketProject/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/supermarketProject/model/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/supermarketProject/persist/ProductDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/supermarketProject/persist/ProductDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/supermarketProject/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/supermarketProject/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/supermarketProject/static/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/supermarketProject/static/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,26 +36,33 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="trabalhos/aula3-5" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GitToolBoxStore">
-    <option name="projectConfigVersion" value="5" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2EJy6WzSftLURj7MfFGDQGFmQrb" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectId" id="2EzI0w04VuIR7VuZ37kiqgX0WvA" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Git.Branch.Popup.ShowAllRemotes": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/OneDrive/Documentos/IdeaProjects/supermarketProject/libs",
+    "extract.method.default.visibility": "private",
+    "last_opened_file_path": "C:/Users/Michel Lutegar/IdeaProjects/supermarketProject/libs",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -51,45 +70,72 @@
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "preferences.keymap"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
       "mysql"
+    ],
+    "RunConfigurationTargetLRU": [
+      "2b4fb2c4-e757-4121-954c-32f25593c655/schema/\"db01\""
     ]
   }
 }]]></component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\OneDrive\Documentos\IdeaProjects\supermarketProject\libs" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Michel Lutegar\IdeaProjects\supermarketProject\libs" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.App">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="supermarketProject.app.App" />
       <module name="supermarketProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="supermarketProject.app.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DAO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="supermarketProject.persist.DAO" />
-      <module name="supermarketProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="supermarketProject.persist.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="script.sql" type="DatabaseScript" editBeforeRun="true" nameIsGenerated="true">
+      <script-file value="$PROJECT_DIR$/src/supermarketProject/static/script.sql" />
+      <script-mode>FILE</script-mode>
+      <data-source id="2b4fb2c4-e757-4121-954c-32f25593c655" namespace="schema/&quot;db01&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Docker Image" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
+      <deployment type="docker-image">
+        <settings>
+          <option name="imageTag" value="mysql:8.0" />
+          <option name="containerName" value="" />
+          <option name="envVars">
+            <list>
+              <DockerEnvVarImpl>
+                <option name="name" value="MYSQL_ROOT_PASSWORD" />
+                <option name="value" value="password" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="MYSQL_DATABASE" />
+                <option name="value" value="myDB" />
+              </DockerEnvVarImpl>
+            </list>
+          </option>
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="3306" />
+                <option name="hostPort" value="3306" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="static: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="src/supermarketProject/static/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
     </configuration>
     <configuration name="static.db: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
@@ -104,10 +150,18 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Database Script.script.sql" />
+      <item itemvalue="Docker.Docker Image" />
+      <item itemvalue="Docker.static.db: Compose Deployment" />
+      <item itemvalue="Docker.static: Compose Deployment" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.App" />
-        <item itemvalue="Application.DAO" />
+        <item itemvalue="Docker.static: Compose Deployment" />
+        <item itemvalue="Docker.Docker Image" />
+        <item itemvalue="Database Script.script.sql" />
         <item itemvalue="Docker.static.db: Compose Deployment" />
       </list>
     </recent_temporary>
@@ -115,86 +169,15 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2c8d57f3-834d-4ddd-a9c2-991ed979c971" name="Changes" comment="" />
-      <created>1662327815506</created>
+      <changelist id="fcc5fa66-c5ef-489b-9f40-dce141bd8d0c" name="Changes" comment="" />
+      <created>1663591766833</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1662327815506</updated>
-      <workItem from="1662327817113" duration="414000" />
-      <workItem from="1662328434561" duration="43000" />
-      <workItem from="1662328547473" duration="93000" />
-      <workItem from="1662328685059" duration="1081000" />
-      <workItem from="1662330067460" duration="885000" />
-      <workItem from="1662343102363" duration="883000" />
-      <workItem from="1662563160051" duration="2773000" />
-      <workItem from="1662571158301" duration="133000" />
-      <workItem from="1662581535977" duration="290000" />
-      <workItem from="1662581934733" duration="14619000" />
+      <updated>1663591766833</updated>
+      <workItem from="1663591769325" duration="1102000" />
+      <workItem from="1663603540808" duration="4530000" />
+      <workItem from="1663690742387" duration="16570000" />
     </task>
-    <task id="LOCAL-00001" summary="first commit">
-      <created>1662330862141</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1662330862141</updated>
-    </task>
-    <task id="LOCAL-00002" summary="feat: adding attributes and methods in Product.java">
-      <created>1662343948853</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1662343948853</updated>
-    </task>
-    <task id="LOCAL-00003" summary="feat: creating DAO class">
-      <created>1662569262463</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1662569262463</updated>
-    </task>
-    <task id="LOCAL-00004" summary="feat: creating docker compose and script.sql">
-      <created>1662582758473</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1662582758473</updated>
-    </task>
-    <task id="LOCAL-00005" summary="feat: confirming sql connection">
-      <created>1662582892972</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1662582892972</updated>
-    </task>
-    <task id="LOCAL-00006" summary="feat: creating the data implementation in the database">
-      <created>1662594126327</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1662594126327</updated>
-    </task>
-    <task id="LOCAL-00007" summary="feat: creating database data listing">
-      <created>1662595749428</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1662595749428</updated>
-    </task>
-    <task id="LOCAL-00008" summary="feat: creating database data listing by id">
-      <created>1662598098285</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1662598098285</updated>
-    </task>
-    <task id="LOCAL-00009" summary="feat: adding new methods">
-      <created>1662601634022</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1662601634022</updated>
-    </task>
-    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,16 +194,28 @@
       </map>
     </option>
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="first commit" />
-    <MESSAGE value="feat: adding attributes and methods in Product.java" />
-    <MESSAGE value="feat: creating DAO class" />
-    <MESSAGE value="feat: creating docker compose and script.sql" />
-    <MESSAGE value="feat: confirming sql connection" />
-    <MESSAGE value="feat: creating the data implementation in the database" />
-    <MESSAGE value="feat: creating database data listing" />
-    <MESSAGE value="feat: creating database data listing by id" />
-    <MESSAGE value="feat: adding new methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: adding new methods" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/supermarketProject/persist/ProductDAO.java</url>
+          <line>170</line>
+          <properties class="supermarketProject.persist.ProductDAO" method="setProduct">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/supermarketProject/service/ProductService.java</url>
+          <line>16</line>
+          <properties class="supermarketProject.service.ProductService" method="findById">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
