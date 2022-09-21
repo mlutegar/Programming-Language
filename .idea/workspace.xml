@@ -4,24 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fcc5fa66-c5ef-489b-9f40-dce141bd8d0c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/supermarketProject.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/slf4j-api-2.0.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/supermarketProject/app/AppData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/supermarketProject/app/AppDelete.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/supermarketProject/app/AppSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="fcc5fa66-c5ef-489b-9f40-dce141bd8d0c" name="Changes" comment="feat: code refactoring">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/supermarketProject/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/supermarketProject/app/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/supermarketProject/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/supermarketProject/model/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/supermarketProject/persist/ProductDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/supermarketProject/persist/ProductDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/supermarketProject/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/supermarketProject/service/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/supermarketProject/static/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/supermarketProject/static/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/supermarketProject/app/AppData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/supermarketProject/app/AppData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/supermarketProject/app/AppDelete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/supermarketProject/app/AppDelete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/supermarketProject/app/AppSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/supermarketProject/app/AppSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/supermarketProject/static/script.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/supermarketProject/static/script.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +36,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2EzI0w04VuIR7VuZ37kiqgX0WvA" />
   <component name="ProjectViewState">
@@ -176,8 +165,16 @@
       <updated>1663591766833</updated>
       <workItem from="1663591769325" duration="1102000" />
       <workItem from="1663603540808" duration="4530000" />
-      <workItem from="1663690742387" duration="16570000" />
+      <workItem from="1663690742387" duration="18546000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: code refactoring">
+      <created>1663717661526</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1663717661526</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,6 +190,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: code refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: code refactoring" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -5,9 +5,9 @@ import java.util.Objects;
 
 /**
  * @Author: Michel Lutegar D'Orsi Pereira
- * @Since: 07/09/2002
+ * @Since: 07/09/2022
  * @Version: 1.0
- * @Description: Class responsible for adding new products in the supermarket
+ * @Description: Class responsible for link all classes
  * */
 
 public class App {

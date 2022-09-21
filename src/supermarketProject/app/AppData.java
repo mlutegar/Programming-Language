@@ -5,6 +5,13 @@ import supermarketProject.service.ProductService;
 
 import javax.swing.*;
 
+/**
+ * @Author: Michel Lutegar D'Orsi Pereira
+ * @Since: 20/09/2022
+ * @Version: 1.0
+ * @Description: Class responsible for adding new products in the supermarket
+ * */
+
 public class AppData {
     public void insert(){
         var service = new ProductService();

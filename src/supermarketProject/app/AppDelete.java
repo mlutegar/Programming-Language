@@ -4,14 +4,18 @@ import supermarketProject.service.ProductService;
 
 import javax.swing.*;
 
+/**
+ * @Author: Michel Lutegar D'Orsi Pereira
+ * @Since: 20/09/2022
+ * @Version: 1.0
+ * @Description: Class responsible for delete products in the supermarket
+ * */
+
 public class AppDelete {
     public void deleteAllProducts(){
         var service = new ProductService();
-        var name = JOptionPane.showInputDialog("Input...");
-        var products = service.findByName(name);
-
+        var products = service.findByName("");
         var status = service.deleteAll(products);
-
         var msg = "Status: " + (status ? "Successfully" : "Failed");
         JOptionPane.showMessageDialog(null, msg, "Answer", JOptionPane.INFORMATION_MESSAGE);
     }
