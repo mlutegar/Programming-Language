@@ -1,6 +1,6 @@
 package br.com.tudocelular.gestaolojacelular.service;
 
-import br.com.tudocelular.gestaolojacelular.model.Celular;
+import br.com.tudocelular.gestaolojacelular.domain.model.Celular;
 import br.com.tudocelular.gestaolojacelular.repository.CelularRepository;
 import org.springframework.stereotype.Service;
 
@@ -30,6 +30,11 @@ public class CelularService {
         celularRepository.deleteById(id);
     }
 
-    public void save(UUID id, float preco){
+    public void update(UUID id, float preco) {
+        celularRepository.updateByPreco(id, preco);
+    }
+
+    public Celular findByPreco(float preco) {
+        return celularRepository.findByPreco(preco);
     }
 }

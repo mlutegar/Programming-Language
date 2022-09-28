@@ -1,4 +1,4 @@
-package br.com.tudocelular.gestaolojacelular.model;
+package br.com.tudocelular.gestaolojacelular.domain.model;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.AllArgsConstructor;
