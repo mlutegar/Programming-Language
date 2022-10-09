@@ -85,8 +85,6 @@ public class LoginController {
         loginService.deleteById(id);
         return new ResponseEntity<>(NO_CONTENT);
     }
-
-    /* ------------------------------------------------------- */
     @PostMapping(value = "/authenticate", produces = MediaType.APPLICATION_JSON_VALUE)
     @Operation(summary = "Efetua o login de um usuario", responses = {@ApiResponse(description = "Sucesso ao efetuar o login", responseCode = "200", content = @Content)})
     ResponseEntity<?> createAuthenticationToken(@RequestBody JwtRequest autentication) throws Exception {
