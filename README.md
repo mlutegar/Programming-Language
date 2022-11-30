@@ -8,5 +8,5 @@ Esse repositrório possue duas frentes de branchs:
 
 # Tecnologias Utilizadas
 - Docker
-- Java 11
+- Java 17
 - MySQL
